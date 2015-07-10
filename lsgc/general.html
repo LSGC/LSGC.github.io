@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Life-Science Grid Community</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="../stylesheets/styles.css">
+    <link rel="stylesheet" href="../stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -14,16 +14,19 @@
   </head>
   <body>
     <div class="wrapper">
-      <header>
-	<p><img src="images/lsgc-logo-small.png" alt="LSGC logo"></p>
-        <h1>LSGC</h1>
-        <p>Life-Science Grid Community</p>
-      </header>
+      <!-- Left menu --> 
+      <div id="header"/>
+      <script>
+	function load_menu(){
+	document.getElementById("header").innerHTML='<object height=1000 type="text/html" data="menu.html" ></object>';
+	}
+	load_menu();
+      </script>      
       
       <section>
 
 	<!-- Title -->
-	<h3> <a id="title" class="anchor" href="#title" aria-hidden="true"><span class="octicon octicon-link"></span></a>This is a title</h3>
+	<h3> <a id="title" class="anchor" href="#title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Under construction</h3>
 	
 	<!-- Content goes here -->	
 

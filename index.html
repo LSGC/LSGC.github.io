@@ -5,25 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Life-Science Grid Community</title>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <link rel="stylesheet" href="./stylesheets/styles.css">
+    <link rel="stylesheet" href="./stylesheets/github-light.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
   </head>
   <body>
+    
     <div class="wrapper">
-      <header>
-	<p><img src="images/lsgc-logo-small.png" alt="LSGC logo"></p>
-        <h1>LSGC</h1>
-        <p>Life-Science Grid Community</p>
-	<ul>
-	  <li><a href="./applications.html">Applications</a></li>
-	</ul>
-      </header>
+      <!-- Left menu --> 
+      <div id="menu"/>
+      <script>
+	function load_menu(){
+	document.getElementById("menu").innerHTML='<object height=1000 type="text/html" data="lsgc/menu.html" ></object>';
+	}
+	load_menu();
+      </script>      
+      
       
       <section>
+      
 	<!-- Welcome -->
       	<h3> <a id="welcome-to-the-life-science-grid-community" class="anchor" href="#welcome-to-the-life-science-grid-community" aria-hidden="true"><span class="octicon octicon-link"></span></a>Welcome to the Life-Science Grid Community</h3>
 	<p>The Life-Science Grid Community (LSGC) is a virtual research community to support life-science applications on the European Grid Infrastructure <a href="http://www.egi.eu">(EGI)</a>. </p>
@@ -40,12 +43,14 @@
 	  <li>April 2013: <a href="https://www.eu-decide.eu">DECIDE</a> joins LSGC.</li>
 	</ul>
 	
-	<!-- More -->
-	<h3><a id="more" class="anchor" href="#more" aria-hidden="true"><span class="octicon octicon-link"></span></a>More</h3>
-	
+
       </section>
       
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!-- Scripts -->
+
+      
+        <script src="javascripts/scale.fix.js"></script>
+	
   </body>
 </html>
