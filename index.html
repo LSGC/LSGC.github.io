@@ -12,165 +12,153 @@
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
     <script src="js/jquery.1.11.3.min.js"></script>
   </head>
   <body>
 
     <script>
-        $(document).ready(function(){
-            $('#sidebar').load('sidebar.html');
-        });
+      $(document).ready(function(){
+      $('#sidebar').load('sidebar.html');
+      });
     </script>
 
     <div class="globcontainer">
-    <div class="row">
+      <div class="row">
         <!-- Left menu --> 
         
         <div id="sidebar" class="col-sm-3 "></div>
-      
+        
         <div class="col-sm-7">      
-      
-            <!-- Welcome ------------------------------------------------------->
-            <h1>Welcome to the Life-Science Grid Community</h1>
-            <p>The Life-Science Grid Community (LSGC) is a virtual research community to support life-science applications on the <a href="http://www.egi.eu">European Grid Infrastructure (EGI)</a>. 
+          
+          <!-- Welcome ------------------------------------------------------->
+          <h1>Welcome to the Life-Science Grid Community</h1>
+          <p>The Life-Science Grid Community (LSGC) is a virtual research community to support life-science applications on the <a href="http://www.egi.eu">European Grid Infrastructure (EGI)</a>. 
             LSGC represents some 500 users from 6 Virtual Organizations.</p>
 
-            <div class="panel panel-default">
-              <div class="panel-heading">LSGC Description and Contractual Documents</div>
-              <div class="panel-body">
-                <p>
-                  <ul>
-                    <li>LSGC purpose and goals (<a href="lsgc/files/purpose11-24215810.pdf">pdf</a>).</li>
-                    <li><a href="http://documents.egi.eu/document/486">Memorandum of Understanding</a> signed with EGI.</li>
-                    <li>Contribution to EGI's scientific use cases (<a href="lsgc/files/EGI-Scientific-Case-LSG-v1.1-24231337.pdf">pdf</a>).</li>
-                  </ul>
-                </p>        
-              </div>
+          <!-- News ------------------------------------------------------------->
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>News</strong></div>
+            <div class="panel-body">
+              <ul>
+                <li>July 2015: Virtual Imaging Platform (VIP) <a href="http://www.isgtw.org/feature/identifying-new-biomarkers-multiple-sclerosis">mentioned in iSGTW</a>.</li>
+                <li>July 2015: With 81 million CPU hours consumed during the
+                  last year, biomed is the most active non-physics VO in
+                  EGI, according
+                  to <a href="http://accounting.egi.eu/egi.php?query=normcpu&startYear=2014&startMonth=7&endYear=2015&endMonth=6&yRange=VO&xRange=DATE&voGroup=all&chart=GRBAR&scale=LIN&localJobs=onlygridjobs">EGI's
+                    accounting</a>.<br/>  Pie Chart showing the share in
+                  Normalised CPU time (kSI2K) per VO (June 2014-June 2015).<br/>
+                  <img src="images/67d98bb04c9dd9dec7f2f017400cb3b96d516385.png"
+                       alt="pie_chart" width="500"/>
+                </li>
+                <li>April 2015: <a href="http://www.egi.eu/news-and-media/newsletters/Inspired_Issue_19/vip.html">Virtual Imaging Platform (VIP)</a> inspires EGI. Also see a <a href="http://www.egi.eu/case-studies/medical/ms_biomarkers.html">typical use-case on multiple sclerosis.</a>.</li>
+                <li>April 2014: <a href="https://operations-portal.egi.eu/vapor?vo=biomed">VAPOR </a> is now released in production and supports 8 VOs.</li>
+                <li>December 2013: <a href="https://operations-portal.egi.eu/vapor?vo=biomed">VAPOR beta version</a> released.</li>
+                <li>December 2013: <a href="https://mosgrid.de">MosGrid VO</a> joins LSGC.</li>
+                <li>November 2013: according to EGI's accounting statistics,
+                  LSGC VOs have been the most active ones in Life-Sciences
+                  in terms of number of executed jobs and consumed CPU
+                  during the last year. This graph shows the per-VO
+                  distribution of the normalized CPU time consumed by
+                  Life-Science VOs in EGI from December 2012 to November
+                  2013 (total: 230,367,332 normalized CPU hours):<br/>
+                  <img src="images/lsgc-04155638-600px.png"
+                       alt="pie_chart" width="500"/>
+                </li>
+                <li>May 2013: Johan Montagnat is elected as LSGC coordinator for the next year.</li>
+                <li>April 2013: <a href="https://www.eu-decide.eu">DECIDE</a> joins LSGC.</li>
+              </ul> 
             </div>
-            
-            <div class="panel panel-default">
-              <div class="panel-heading">Other Presentations</div>
-              <div class="panel-body">
-                <p>
-                  <ul>
-                    <li>Presentation at Spanish Network for e-Science, 2010 (<a href="lsgc/files/slides1-24215839.pdf">pdf</a>) (<a href="lsgc/files/slides1-24215911.odp">odp</a>).</li>
-                    <li>Presentation at Cracow Grid Workshop, 2011 (<a href="lsgc/files/cracow1-24220345.pdf">pdf</a>).</li>
-                  </ul>
-                </p>        
-              </div>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>LSGC Description and Contractual Documents</strong></div>
+            <div class="panel-body">
+              <p>
+                <ul>
+                  <li>LSGC purpose and goals (<a href="lsgc/files/purpose11-24215810.pdf">pdf</a>).</li>
+                  <li><a href="http://documents.egi.eu/document/486">Memorandum of Understanding</a> signed with EGI.</li>
+                  <li>Contribution to EGI's scientific use cases (<a href="lsgc/files/EGI-Scientific-Case-LSG-v1.1-24231337.pdf">pdf</a>).</li>
+                  <li>Presentation at Spanish Network for e-Science, 2010 (<a href="lsgc/files/slides1-24215839.pdf">pdf</a>) (<a href="lsgc/files/slides1-24215911.odp">odp</a>).</li>
+                  <li>Presentation at Cracow Grid Workshop, 2011 (<a href="lsgc/files/cracow1-24220345.pdf">pdf</a>).</li>
+                </ul>
+              </p>        
             </div>
-            
-            <div class="panel panel-default">
-              <div class="panel-heading">Areas of Expertise</div>
-              <div class="panel-body">
-                <p>
+          </div>
+          
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>Areas of Expertise</strong></div>
+            <div class="panel-body">
+              <p>
+                <ul>
+                  <li>Life-Sciences
                     <ul>
-                      <li>Life-Sciences
-                        <ul>
-                          <li>Medical imaging
+                      <li>Medical imaging
                         <ul>
                           <li>neuroimaging</li>
                           <li>cardiovascular imaging</li>
                           <li>radiotherapy simulation</li>
                         </ul>
-                          </li>
-                          <li>Bioinformatics
+                      </li>
+                      <li>Bioinformatics
                         <ul>
                           <li>genomics</li>
                           <li>proteomics</li>
                           <li>biobanking</li>
                           <li>transcriptomics</li>
                         </ul>
-                          </li>
-                        </ul>
-                      </li>
-                      <li>High-level services for life scientists
-                        <ul>
-                          <li>grid application porting, execution and monitoring</li>
-                          <li>grid workflow management</li>
-                          <li>biomedical data management and sharing</li>
-                          <li>user interfaces: scientific gateways, browsers</li>
-                          <li>VO administration and operations, services operating and development</li>
-                        </ul>
                       </li>
                     </ul>
-                </p>        
-              </div>
-            </div>
-            
-            <!-- News ------------------------------------------------------------->
-            <div class="panel-group" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-info">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <p class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                        <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
-                        <strong>News <span class="small">(click to collapse/expand)</span></strong></a>
-                  </p>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
+                  </li>
+                  <li>High-level services for life scientists
                     <ul>
-                      <li>July 2015: Virtual Imaging Platform (VIP) <a href="http://www.isgtw.org/feature/identifying-new-biomarkers-multiple-sclerosis">mentioned in iSGTW</a>.</li>
-                      <li>July 2015: With 81 million CPU hours consumed during the
-                        last year, biomed is the most active non-physics VO in
-                        EGI, according
-                        to <a href="http://accounting.egi.eu/egi.php?query=normcpu&startYear=2014&startMonth=7&endYear=2015&endMonth=6&yRange=VO&xRange=DATE&voGroup=all&chart=GRBAR&scale=LIN&localJobs=onlygridjobs">EGI's
-                        accounting</a>.<br/>  Pie Chart showing the share in
-                        Normalised CPU time (kSI2K) per VO (June 2014-June 2015).
-                        <img src="images/67d98bb04c9dd9dec7f2f017400cb3b96d516385.png"
-                        alt="pie_chart" width="500"/>
-                      </li>
-                      <li>April 2015: <a href="http://www.egi.eu/news-and-media/newsletters/Inspired_Issue_19/vip.html">Virtual Imaging Platform (VIP)</a> inspires EGI. Also see a <a href="http://www.egi.eu/case-studies/medical/ms_biomarkers.html">typical use-case on multiple sclerosis.</a>.</li>
-                      <li>April 2014: <a href="https://operations-portal.egi.eu/vapor?vo=biomed">VAPOR </a> is now released in production and supports 8 VOs.</li>
-                      <li>December 2013: <a href="https://operations-portal.egi.eu/vapor?vo=biomed">VAPOR beta version</a> released.</li>
-                      <li>December 2013: <a href="https://mosgrid.de">MosGrid VO</a> joins LSGC.</li>
-                      <li>November 2013: according to EGI's accounting statistics,
-                        LSGC VOs have been the most active ones in Life-Sciences
-                        in terms of number of executed jobs and consumed CPU
-                        during the last year. This graph shows the per-VO
-                        distribution of the normalized CPU time consumed by
-                        Life-Science VOs in EGI from December 2012 to November
-                        2013 (total: 230,367,332 normalized CPU hours):
-                        <img src="images/lsgc-04155638-600px.png"
-                        alt="pie_chart" width="500"/>
-                      </li>
-                      <li>May 2013: Johan Montagnat is elected as LSGC coordinator for the next year.</li>
-                      <li>April 2013: <a href="https://www.eu-decide.eu">DECIDE</a> joins LSGC.</li>
-                    </ul> 
-                  </div>
-                </div>
-              </div>
+                      <li>grid application porting, execution and monitoring</li>
+                      <li>grid workflow management</li>
+                      <li>biomedical data management and sharing</li>
+                      <li>user interfaces: scientific gateways, browsers</li>
+                      <li>VO administration and operations, services operating and development</li>
+                    </ul>
+                  </li>
+                </ul>
+              </p>        
             </div>
+          </div>
+                    
+          <!-- Contributors and collaboration -------------------------------------------->
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>Current collaborations</strong></div>
+            <div class="panel-body">
+              <p><a href="http://www.egi.eu"><img src="images/File-egi2.jpg" alt="EGI_logo"/></a> The European Grid Initiative is a central and critical body to help liaising with NGIs. It provides us with sustained user support  and brings our technical requirements to the technology providers (see <a  href="http://documents.egi.eu/document/486"><b>Memorandum of Understanding</b></a>).</p>
+              
+              <p>The following National Grid Initiatives (NGIs) actively follow and/or contribute to LSGC activities:</p>
+              <ul>
+                <li><a  href="http://www.surfsara.nl/"><b>SURFsara (Dutch NGI)</b></a></li>
+                <li><a  href="http://www.france-grilles.fr"><b>France Grilles (French NGI)</b></a></li>
+                <li><a  href="http://www.italiangrid.org"><b>Italian Grid Infrastructure</b></a></li>
+                <li><a  href="http://www.ibergrid.eu/"><b>Ibergrid</b></a> (Spanish/Portuguese NGI)</li>
+              </ul>
+              <p>NGIs of the following countries contribute compute and storage resources + admin teams to LSGC users: Asia Pacific, Bulgaria, Canada, Croatia, Cyprus, Germany, GISELA project, France, Greece, Hungary, Ireland, Italy, Latin America, Netherlands, Poland, Portugal, Russia, Slovakia, Spain, Turkey, UK.</p>
+              <p><a  href="mailto:life-science-grid-community@googlegroups.com"><b>Contact us</b></a> if you think your NGI should or shouldn't appear in this list.</p>
+            </div>
+          </div>
 
-            <!-- Contributors and collaboration -------------------------------------------->
-            <h2 id="contributors">Contributors and collaboration</h2>
-            <h3>Current</h3>
-            <p>
-              <a href="http://www.egi.eu"><img src="images/File-egi2.jpg" alt="EGI_logo"/></a> The European Grid Initiative is a central and critical body to help liaising with NGIs. It provides us with sustained user support  and brings our technical requirements to the technology providers (see <a  href="http://documents.egi.eu/document/486"><b>Memorandum of Understanding</b></a>).</p>
-            <p>The following National Grid Initiatives (NGIs) actively follow and/or contribute to LSGC activities:</p>
-            <ul>
-              <li><a  href="http://www.surfsara.nl/"><b>SURFsara (Dutch NGI)</b></a></li>
-              <li><a  href="http://www.france-grilles.fr"><b>France Grilles (French NGI)</b></a></li>
-              <li><a  href="http://www.italiangrid.org"><b>Italian Grid Infrastructure</b></a></li>
-              <li><a  href="http://www.ibergrid.eu/"><b>Ibergrid</b></a> (Spanish/Portuguese NGI)</li>
-            </ul>
-            <p>NGIs of the following countries contribute compute and storage resources + admin teams to LSGC users: Asia Pacific, Bulgaria, Canada, Croatia, Cyprus, Germany, GISELA project, France, Greece, Hungary, Ireland, Italy, Latin America, Netherlands, Poland, Portugal, Russia, Slovakia, Spain, Turkey, UK.</p>
-            <p><a  href="mailto:life-science-grid-community@googlegroups.com"><b>Contact us</b></a> if you think your NGI should or shouldn't appear in this list.</p>
-            
-            <h3>Past</h3>
-            <ul>
-            <li><a href="http://www.scalalife.eu/"><b>Scalalife</b></a>. <img src="images/scalalife3-24221013.jpg"> </li>
-            <li>Swiss NGI</li>
-            </ul>
-        
+          <div class="panel panel-default">
+            <div class="panel-heading"><strong>Past collaborations</strong></div>
+            <div class="panel-body">
+              <ul>
+                <li><a href="http://www.scalalife.eu/"><b>Scalalife</b></a>. <img src="images/scalalife3-24221013.jpg"> </li>
+                <li>Swiss NGI</li>
+              </ul>
+            </div>
+          </div>
+          
+          
         </div> <!-- .col-sm7 -->
-    </div> <!-- .row -->
+      </div> <!-- .row -->
     </div><!-- .globcontainer -->
-	
+    
     <!-- Bootstrap core JavaScript ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
