@@ -1,0 +1,58 @@
+/* Changes to bootstrap styles */
+.panel-body {
+    padding: 2px;
+}
+.col-sm-7 {
+    width: 70%;
+}
+.col-sm-3 {
+}
+.globcontainer {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sidebar {
+    width: 270px;
+    height: 1000px;
+    padding-left: 40px;
+}
+
+#sidebar  a {
+    background-color: #EEE;
+    width: 180px;
+}
+#sidebar  button {
+    background-color: #EEE;
+    width: 180px;
+}
+
+body {
+  padding:10px;
+  font:14px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color:#777;
+  font-weight:300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color:#555;
+  margin:0 0 20px;
+}
+
+h2 {
+  border-bottom: dotted #AAA 1px;
+}
+
+a {
+  color:#39c;
+  font-weight:400;
+  text-decoration:none;
+}
+
+a small {
+  font-size:11px;
+  color:#777;
+  margin-top:-0.6em;
+  display:block;
+}
