@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="CCGrid – Health 2014 | May 26-29, 2014 | Chicago, IL, USA">
+   <meta name="author" content="HTW Berlin">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>CCGrid – Health 2014</title>
+
+   <!-- build:css css/styles.css -->
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <!-- endbuild -->
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700">
+</head>
+
+<body>
+
+   <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+      <div class="container">
+         <div class="navbar-header">
+            <a class="navbar-brand" href=".">CCGrid – Health 2014</a>
+         </div>
+         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="#Submission">Submission</a>
+               </li>
+               <li><a href="#Programme-Committee">Programme Committee</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div class="jumbotron">
+      <div class="container">
+         <h1>Workshop on Clusters, Clouds and Grids for Health</h1>
+         <p>In conjunction with <a href="http://datasys.cs.iit.edu/events/CCGrid2014/">CCGrid 2014</a> - 14th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, May 26-29, 2014, Chicago, IL, USA</p>
+      </div>
+   </div>
+
+   <div class="container">
+
+      <div class="row">
+         <div class="col-md-12">
+            <h2>Distributed Detection of Cancer Cells in Cellular Spike Streams</h2>
+            <h3>Abstract</h3>
+            <p>Detection and identification of biological targets such as DNA, proteins, and diseased human cells is crucial towards early disease diagnosis and prognosis. The key to differentiate healthy cells from the diseased cells is the biophysical properties that differs significantly. Micro- and nanosystems such as solid-state micropores and nanopores can measure and translate these properties of human cells and DNA into electrical spikes. Nonetheless, such approaches result into large data streams that are often plagued with inherit noise and baseline wanders. Moreover, the extant detection approaches are tedious, time-consuming, and error-prone, and there is no error-resilient software that can analyze large datasets instantly. The ability to effectively process and detect biological targets in larger datasets lies in the automated and accelerated data processing strategies using state-of-the-art distributed systems. To this end, we propose a distributed detection framework that collects the raw data stream onto the server node, which then splits/distributes the data into segments across the worker nodes. Each node reduces noise in the assigned data segment using moving-average filtering, and detects the electric spikes by comparing them against a threshold (i.e., based on the statistics – mean and standard deviation of the data). Our proposed framework enables the detection of cancer cells with an accuracy of 63% in a mixture of Cancer cells, Red Blood Cells (RBCs), and White Blood Cells (WBCs), and achieves a speedup of 6X over a single-node machine by processing 10 gigabytes of raw data on an 8-node cluster in less than a minute.
+            </p>
+         </div>
+      </div>
+
+      <footer>
+         <p>HTW Berlin 2013</p>
+      </footer>
+   </div>
+</body>
+
+</html>
