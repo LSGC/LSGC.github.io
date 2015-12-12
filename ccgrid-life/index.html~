@@ -43,10 +43,25 @@
          <div class="col-md-8">
             <h2>Welcome</h2>
             <p>
-               In the last 20 years, computational methods have become an important part of developing emerging technologies for the field of bioinformatics and biomedicine. Research areas such as biomodelling, molecular dynamics, genomics, neuroscience, cancer models, evolutionary biology, medical biology, biochemistry, biophysics, biotechnology, cell biology, nanobiotechnology, biological engineering, pharmacology, genetics therapy, or automatic diagnosis, rely heavily on large scale computational resources as they need to manage Tbytes or Pbytes of data with large-scale structural and functional relationships, TFlops or PFlops of computing power for simulating highly complex models, or many-task processes and workflows for processing and analyzing data.
+         	Today, biomedicine and bioinformatics rely heavily on large scale
+computational resources, as they typically employ data- and compute-
+intensive methods. Omics, biomedical imaging and computational 
+models quickly reach data volumes of terabytes and petabytes, 
+data analysis may need teraflops or petaflops of computing power.
+New challenges arise from complex analysis of distributed 
+heterogeneous data, for example in translational medicine. 
+
             </p>
             <p>
-            This new situation demands appropriate IT-infrastructures, where bioinformatic and medical data can be processed within an acceptable timespan - reaching from minutes in health-care applications to days in large-scale research projects. Large-scale distributed IT-systems such as Grids, Clouds and Big-Data-Environments are promising to address research, clinical and medical research community requirements. They allow for significant reduction of computational time for running large experiments, for speeding-up the development time for new algorithms, for increasing the availability of new methods for the research community, and for supporting large-scale multi-centric collaborations. However, specific challenges in the employment of such systems for bioinformatic applications such as security, reliability and user-friendliness, often impede straightforward adoption of existing solutions from other application domains.
+            Distributed IT-systems, such as Grids, Clouds and recently Big Data
+environments, are used for to speed-up large experiments and development
+time for new algorithms. Distributed systems also allow for better
+availability of new computational methods for supporting large-scale
+multi-centric collaborations. However, specific challenges in the 
+employment of such systems for biomedical applications, such as security,
+reliability and user-friendliness, often impede wide-range adoption of
+prototype solutions. 
+
 	    </p>
             <p>
                This workshop aims at bringing together developers of bioinformatic and
