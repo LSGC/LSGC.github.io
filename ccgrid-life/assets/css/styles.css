@@ -1,6 +1,42 @@
+/*
+   COLORS
+
+   blue: #0082d1
+   green: #76b900
+
+ */
+
+/*
+   ELEMENTS
+ */
+
 body {
    line-height: 1.5;
 }
+
+h2 {
+   border-bottom: 1px solid #ddd;
+}
+
+h3 ~ h3 {
+   margin-top: 40px;
+}
+
+a {
+   color: #0082d1;
+}
+
+footer {
+   margin-top: 20px;
+   padding-top: 10px;
+   border-top: 1px solid #ddd;
+   color: #ccc;
+   text-align: center;
+}
+
+/*
+   CLASSES
+ */
 
 .navbar {
    margin-bottom: 0;
@@ -10,7 +46,7 @@ body {
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-text,
 .jumbotron a {
-   color: #ccc;
+   color: #ddd;
 }
 
 .navbar-default,
@@ -31,19 +67,7 @@ body {
    font-size: 18px;
    font-weight: 200;
    line-height: 1.4;
-   color: #ccc;
-}
-
-h2 {
-   border-bottom: 1px solid #dddddd;
-}
-
-h3 ~ h3 {
-   margin-top: 40px;
-}
-
-a {
-   color: #0082d1;
+   color: #ddd;
 }
 
 .btn-success {
@@ -54,39 +78,31 @@ a {
    width: 110px;
 }
 
-aside .btn-primary {
-   margin-top: 40px;
-   background-color: #6aa3d5;
-   border-color: #5697d0;
+.list-group {
+   border-radius: 0;
+   box-shadow: none;
+   border: 1px solid #ddd;
+}
+
+.list-group-item {
+   border-top-color: #ddd;
 }
 
 .list-striped > li:nth-child(odd) {
    background-color: #f9f9f9;
 }
 
-#Programme-Committee + ul {
-   padding-left: 1.3em;
-}
-
-
-/* Custom page footer */
-
-footer {
-   margin-top: 20px;
-   padding-top: 10px;
-   border-top: 1px solid #dddddd;
-   color: #999999;
-   text-align: center;
-}
-
-
-/* Customize container */
-
 @media (min-width: 960px) {
    .container,
    .jumbotron .container {
       max-width: 960px;
    }
+}
+
+/* Zweispaltige Liste
+
+#Programme-Committee + ul {
+   padding-left: 1.3em;
 }
 
 @media (min-width: 600px) {
@@ -104,3 +120,5 @@ footer {
       text-indent: -1em;
    }
 }
+
+*/

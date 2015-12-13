@@ -104,9 +104,9 @@
 
             <h3>Workshop Chairs </h3>
             <ul class="list-group list-striped">
-               <li class="list-group-item">Dagmar Krefting, University of Applied Sciences Berlin, Germany</li>
-               <li class="list-group-item">Javier Garcia Blas, University Carlos III of Madrid, Spain</li>
-               <li class="list-group-item">Silvia D. Olabarriaga, AMC/ University of Amsterdam, Netherlands</li>
+               <li class="list-group-item">Dagmar Krefting<br>University of Applied Sciences Berlin, Germany</li>
+               <li class="list-group-item">Javier Garcia Blas<br>University Carlos III of Madrid, Spain</li>
+               <li class="list-group-item">Silvia D. Olabarriaga<br>AMC/ University of Amsterdam, Netherlands</li>
             </ul>
 	    <a class="btn btn-success btn-lg btn-block" href="mailto:ccgridlife2016@easychair.org">Contact Workshop Chairs</a> 
             <h3>Steering Committee</h3>
