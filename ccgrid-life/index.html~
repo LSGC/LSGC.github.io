@@ -104,9 +104,9 @@
 
             <h3>Workshop Chairs </h3>
             <ul class="list-group list-striped">
-               <li class="list-group-item">Dagmar Krefting<br>University of Applied Sciences Berlin, Germany</li>
-               <li class="list-group-item">Javier Garcia Blas<br>University Carlos III of Madrid, Spain</li>
-               <li class="list-group-item">Silvia D. Olabarriaga<br>AMC/ University of Amsterdam, Netherlands</li>
+               <li class="list-group-item">Dagmar Krefting, University of Applied Sciences Berlin, Germany</li>
+               <li class="list-group-item">Javier Garcia Blas, University Carlos III of Madrid, Spain</li>
+               <li class="list-group-item">Silvia D. Olabarriaga, AMC/ University of Amsterdam, Netherlands</li>
             </ul>
 	    <a class="btn btn-success btn-lg btn-block" href="mailto:ccgridlife2016@easychair.org">Contact Workshop Chairs</a> 
             <h3>Steering Committee</h3>
@@ -133,9 +133,10 @@
             	<p>Incomplete, to be extended soon</p>
             	<ul>
                	    <li>Christian Barillot, CNRS / IRISA, France</li>
-               <!--<li>Ignacio Blanquer, Universidad Politecnica de Valencia, Spain</li>
-      <li>Steve Brewer, University of Southampton, UK</li>-->
-                   <li>Jesus Carretero, University Carlos III of Madrid, Spain</li>
+               	    <li>Ignacio Blanquer, Universidad Politecnica de Valencia, Spain</li>
+      <!--<li>Steve Brewer, University of Southampton, UK</li>-->
+ 		   <li>Silvina Caíno, University Carlos III of Madrid, Spain</li>                   
+	           <li>Jesus Carretero, University Carlos III of Madrid, Spain</li>
                <!--<li>Manuel Desco, Hospital Gregorio Maranon de Madrid, Spain</li>-->
                    <li>Scott Emrich, University of Notre Dame, IN, USA</li>
                <!--<li>Alban Gaignard, CNRS, France</li>-->
@@ -148,13 +149,14 @@
                <!--<li>Jens Krüger, University of Tübingen, Germany</li>
          	<li>Yannick Legre, EGI.eu, Amsterdam, Netherlands</li>-->
                   <li>Ivan Merelli, Institute for Biomedical Technologies, Segrate, Italy </li>
-               <!--<li>Luciano Milanesi, CNT ITB, Italy</li>-->
+                  <li>Luciano Milanesi, CNT ITB, Italy</li>
                   <li>Johan Montagnat, CNRS/I3S, France</li>
                   <li>Jarek Nabrzyski, University of Notre Dame, IN, USA</li>
                   <li>Silvia D. Olabarriaga, AMC / University of Amsterdam, Netherlands</li>
                   <li>Horacio Perez-Sanchez, University of Murcia, Spain</li>
-               <!--<li>Dana Petcu, University of Timisoara, Romania</li>
-         	<li>Jonathan Silverstein, CCRI, NorthShore University HealthSystem, IL, USA</li>-->
+               <!--<li>Dana Petcu, University of Timisoara, Romania</li>-->
+		  <li>Estefanía Serrano, Universidad Carlos III of Madrid, Spain</li>
+         	  <li>Jonathan Silverstein, CCRI, NorthShore University HealthSystem, IL, USA</li>-->
                   <li>Richard Sinnott, University of Melbourne, Australia</li>
                <!--<li>Tony Solomonides, CCRI, NorthShore University HealthSystem, IL, USA</li>
          	<li>James Taylor, Emory University, USA</li>-->
@@ -181,7 +183,7 @@
                </li>
                <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
                </li>
-               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Health 2015</a>
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
                </li>
                </li>
             </ul>
@@ -192,6 +194,19 @@
          <p>University of Applied Sciences Berlin</p>
       </footer>
    </div>
+<div style="background-color: rgba(0,0,0,0.7); display: flex; align-items: center;" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header">  <h3>Welcome</h3> 18.12.2015 <br> Thank you for your interest in CCGrid-Life. We would have loved to meet you at CCGrid-Life 2016. But we are very sorry to inform you that due to external reasons, we decided to withdraw the workshop. We hope to see you at CCGrid-Life 2017, so have a look on this site next year. <br> <br>             <h4>Previous Workshops</h4>
+            <ul class="list-unstyled">
+               <li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a>
+               </li>
+               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
+               </li>
+               </li>
+            </ul>
+  </div>   </div> </div> </div>
 </body>
 
 </html>
