@@ -1,0 +1,246 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Life-Science Grid Community - biomed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.1.11.3.min.js"></script>
+  </head>
+  <body>
+
+    <script>
+        $(document).ready(function(){ $('#sidebar').load('biomed-technicals-sidebar.html'); });
+    </script>
+
+    <div class="globcontainer">
+    <div class="row">
+      
+        <!-- Left menu --> 
+        <div id="sidebar" class="col-sm-3"></div>
+        
+        <!-- Body -->
+        <div class="col-sm-8">
+            <!-- Title -->
+            <h1> <a id="title" class="anchor" href="#title" aria-hidden="true"><span class="octicon octicon-link"></span></a>Technical Information - biomed VO</h1>
+            
+<h2><span id="DIRAC_service">DIRAC service</span></h2>
+
+<p>The French NGI, <a href="http://www.france-grilles.fr">France-Grilles</a>, offers a <a href="http://diracgrid.org">DIRAC</a> service to the biomed VO. This is the recommended solution to access computing resources of the VO.</p>
+<p>DIRAC provides a pilot-job execution mechanism. You may be interested in using it in case:</p>
+<ul>
+<li>you experience long queuing delays by submitting with glite-wms-job-submit</li>
+<li>you use glite-ce-job-submit, but have difficulties to select the CE where to submit your jobs</li>
+<li>you are using your own pilot-job system, but you have difficulties to maintain it at a production level</li>
+</ul>
+<p>To get started, read the <a href="/en/Usage_instructions" title="usage instructions">usage instructions</a>.</p>
+<p><a href="/en/DIRAC4biomed" title="DIRAC4biomed">On-going discussion about the adoption of DIRAC in the VO.</a></p>
+
+<!---------------------------------------------------------------------------------------------------------->
+<h2><span id="CVMFS">CVMFS</span></h2>
+
+<h4><span id="What_is_it">What is it?</span></h4>
+<p>CVMFS is a convenient alternative to the VO software area (VO_BIOMED_SW_DIR): with CVMFS, VO software is deployed in one place only and is automatically replicated and made available through a mount point to all worker nodes that support the service.</p>
+<p>RAL Tier-1 UK now hosts a CVMFS stratum 0 repository for biomed. As of today, half of the grid sites supporting biomed have the CVMFS client configured for biomed. Computing elements are identified with tag <b>VO-biomed-CVMFS</b>. On their worker nodes, the CVMFS biomed repository is accessed at either <code>/cvmfs/biomed.egi.eu</code> or <code>/cvmfs/biomed.gridpp.ac.uk</code>. Path <code>/cvmfs/biomed.gridpp.ac.uk</code> is planned for retirement. In time, the egi.eu replacement should take over. So far however, jobs should check which path actually exists on the Worker Nodes where they land.</p>
+
+<h4><span id="How_to_use_it">How to use it?</span></h4>
+<p>1. You first need to deploy your files on CVMFS. To do this, you need to contact Catalin Condurache (catalin.condurache@stfc.ac.uk) and send him your DN so that he gives you access to the repository. Don't forget to mention you are a biomed user.</p>
+<p>2. Once validated, you shall be allowed to connect to server cvmfs-upload01.gridpp.rl.ac.uk: create a proxy certificate (voms-proxy-init --voms biomed), then:<br>
+<code>$ gsissh -p 1975 cvmfs-upload01.gridpp.rl.ac.uk</code>
+</p>
+<p>CD to cvmfs_repo (link to /cvmfs-mirror/biomed.gridpp.ac.uk), create your own folder, then deploy your files (gsiscp)</p>
+<p>3. Once files are replicated (a matter of hours), submit grid jobs at Computing Elements where CVMFS client is configured for biomed, using VO software tag <b>VO-biomed-CVMFS</b>:<br>
+
+<code>Requirements  = Member(&quot;VO-biomed-CVMFS&quot;, other.GlueHostApplicationSoftwareRunTimeEnvironment)</code>
+</p>
+<p>Files are accessed in mount point <code>/cvmfs/biomed.egi.eu</code> or <code>/cvmfs/biomed.gridpp.ac.uk</code>: the job needs to check which one actually exists.</p>
+
+<h4><span id="How_to_have_more_sites_supporting_CVMFS_for_biomed">How to have more sites supporting CVMFS for biomed?</span></h4>
+
+<p>There are 3 kinds of sites :  (i) sites not supporting CVMFS at all,  (ii) sites supporting CVMFS for some VOs, but not biomed, and  (iii) sites supporting CVMFS for biomed. Getting from (ii) to (iii) is supposed to be relatively simple, since it only requires a change in the CVMFS configuration from the sites admins.</p>
+<p>The biomed support team has run a lobbying campaign on sites from the second category mostly. We had many positive answers, as of today the service is provided to biomed by 44 sites, accounting for 66 CEs an 110 CE queues.</p>
+<p>Contact the biomed technical support team if you would like specific sites to provide biomed with CVMFS.</p>
+
+<h4><span id="Known_limitations">Known limitations</span></h4>
+<p><b>CVMFS space is public, anyone can access it</b> =&gt; do not deploy sensitive material.</p>
+<p><b>Copyrighted software is not not acceptable</b>, unless you have a (unlikely proper) license that would potentially apply to any biomed user.</p>
+<p>Uploading big files may hamper CVMFS performances: big files are likely not to be cached on local Squids, therefore they'd be downloaded from Stratum-1 each time they are needed. If uploaded files are tarballs, it is <u>strongly recommended</u> that they be extracted locally on the repository.</p>
+          
+<!---------------------------------------------------------------------------------------------------------->
+<h2><span id="EMI2_UI">VirtualBox EMI2 UI Image</span></h2>
+<p>A VirtualBox image containing a fully functional EMI2 user interface running CentOS 6 is available for testing.</p>
+
+<h4><span id="Image_download_and_installation">Image download and installation</span></h4>
+<p>The EMI2 VirtualBox image is available on the biomed LFC. Assuming that your VirtualBox VM directory is at ${HOME}/VirtualBox\ VMs:</p>
+<pre>
+ cd ${HOME}/VirtualBox\ VMs
+ lcg-cp lfn:/grid/biomed/emi2-ui-biomed.tgz file:emi2-ui-biomed.tgz
+ tar zxvf emi2-ui-biomed.tgz
+</pre>
+<p>You should now have a &quot;EMI2 UI - biomed&quot; image in your VirtualBox.</p>
+
+<h4><span id="Accounts">Accounts</span></h4>
+<p>You can login as user &quot;biomed&quot;, with password &quot;biomed&quot;. The root password is &quot;biomed2012&quot;.</p>
+
+<h4><span id="UI_testing">UI testing</span></h4>
+<p>You will have to install your own biomed grid credentials. The following commands have been tested:</p>
+<pre>
+voms-proxy-init -voms biomed
+lfc-*
+lcg-cr, lcg-cp, lcg-del
+glite-wms-job-submit
+glite-wms-job-status
+glite-wms-job-logging-info
+glite-wms-job-output (you will have to create /tmp/jobOutput if used with no option)
+</pre>
+<p>A sample JDL file is available in ${HOME}/hello.jdl</p>
+
+<!---------------------------------------------------------------------------------------------------------->
+<h2><span id="UI_configuration">UI configuration</span></h2>
+<p>For installing a UI, here are some configuration parameters you will need for accessing the biomed VO services:</p>
+
+<h3><span id="glite_wmsui.conf">/opt/glite/etc/biomed/glite_wmsui.conf</span></h3>
+<pre>
+[
+NSAddresses = {&quot;egee-wms-01.cnaf.infn.it:7443&quot;};
+LBAddresses = [[Template:&quot;egee-wms-01.cnaf.infn.it:9003&quot;]];
+WMProxyEndPoints = {&quot;https://marwms.in2p3.fr:7443/glite_wms_wmproxy_server&quot;};
+OutputStorage  =  &quot;/tmp/jobOutput&quot;;
+JdlDefaultAttributes =  [
+   RetryCount  =  3;
+   rank  = - other.GlueCEStateEstimatedResponseTime;
+   PerusalFileEnable  =  false;
+   AllowZippedISB  =  true;
+   requirements  =  other.GlueCEStateStatus == &quot;Production&quot;;
+   ShallowRetryCount  =  10;
+   SignificantAttributes  =  {&quot;Requirements&quot;, &quot;Rank&quot;, &quot;FuzzyRank&quot;};
+   MyProxyServer  =  &quot;lxn1179.cern.ch&quot;;
+   ];
+]
+</pre>
+
+<h3><span id="glite_wms.conf">/opt/glite/etc/biomed/glite_wms.conf</span></h3>
+<pre>
+[
+NSAddresses = {&quot;egee-wms-01.cnaf.infn.it:7443&quot;};
+LBAddresses = [[Template:&quot;egee-wms-01.cnaf.infn.it:9003&quot;]];
+WMProxyEndPoints = {&quot;https://marwms.in2p3.fr:7443/glite_wms_wmproxy_server&quot;};
+OutputStorage  =  &quot;/tmp/jobOutput&quot;;
+JdlDefaultAttributes =  [
+   RetryCount  =  3;
+   rank  = - other.GlueCEStateEstimatedResponseTime;
+   PerusalFileEnable  =  false;
+   AllowZippedISB  =  true;
+   requirements  =  other.GlueCEStateStatus == &quot;Production&quot;;
+   ShallowRetryCount  =  10;
+   SignificantAttributes  =  {&quot;Requirements&quot;, &quot;Rank&quot;, &quot;FuzzyRank&quot;};
+   MyProxyServer  =  &quot;lxn1179.cern.ch&quot;;
+   ];
+]
+</pre>
+
+<h3><span id="vomses">/opt/glite/etc/vomses/biomed-cclcgvomsli01.in2p3.fr</span></h3>
+<pre>
+&quot;biomed&quot; &quot;cclcgvomsli01.in2p3.fr&quot; &quot;15000&quot; &quot;/O=GRID-FR/C=FR/O=CNRS/OU=CC-IN2P3/CN=cclcgvomsli01.in2p3.fr&quot; &quot;biomed&quot; &quot;24&quot;
+</pre>
+
+<h3><span id="Environment_variables">Environment variables</span></h3>
+<pre>
+LFC_HOST=lfc-biomed.in2p3.fr
+LCG_GFAL_INFOSYS=cclcgtopbdii02.in2p3.fr:2170
+</pre>
+
+<!---------------------------------------------------------------------------------------------------------->
+<h2><span id="User_Interface_configuration_using_YAIM">User Interface configuration using YAIM</span></h2>
+<p>When using <a href="https://twiki.cern.ch/twiki/bin/view/EGEE/YAIM">YAIM</a> for configuring an UI, you can use the following in your <tt>site-info.def</tt> configuration file:</p>
+<pre>
+ RB_HOST=&quot;boszwijn.nikhef.nl&quot;
+ LB_HOST=&quot;boszwijn.nikhef.nl&quot;
+ WMS_HOST=&quot;egee-wms-01.cnaf.infn.it&quot;
+ PX_HOST=&quot;myproxy.cern.ch&quot;
+ BDII_HOST=&quot;cclcgtopbdii02.in2p3.fr&quot;
+ REG_HOST=&quot;lcgic01.gridpp.rl.ac.uk&quot;
+ CA_REPOSITORY=&quot;rpm http://linuxsoft.cern.ch/ LCG-CAs/current production&quot;
+ VO_BIOMED_VOMS_SERVERS=&quot;'vomss://voms-biomed.in2p3.fr:8443/voms/biomed?/biomed/'&quot;
+ VO_BIOMED_VOMSES=&quot;'biomed cclcgvomsli01.in2p3.fr 15000 /O=GRID-FR/C=FR/O=CNRS/OU=CC-IN2P3/CN=cclcgvomsli01.in2p3.fr biomed 24'&quot;
+ VO_BIOMED_VOMS_CA_DN=&quot;'/C=FR/O=CNRS/CN=GRID2-FR'&quot;
+</pre>
+<p>Some <tt>/etc/profile.d</tt> scripts can be useful to set some user variable used by some tools (e.g. <tt>lfc-ls(1)</tt>):</p>
+<pre>
+echo 'export LFC_HOST=&quot;lfc-biomed.in2p3.fr&quot;' &gt; /etc/profile.d/lfc-host.sh
+echo 'setenv LFC_HOST &quot;lfc-biomed.in2p3.fr&quot;' &gt; /etc/profile.d/lfc-host.csh
+chmod +x /etc/profile.d/lfc-host.*
+</pre>
+
+<!---------------------------------------------------------------------------------------------------------->
+<h2><span id="Security">Security configuraton</span></h2>
+
+<h3><span id="Secure_SSH">Secure SSH</span></h3>
+<ul>
+<li>Implement the recommendations in <a href="http://wiki.centos.org/HowTos/Network/SecuringSSH">http://wiki.centos.org/HowTos/Network/SecuringSSH</a>, in particular:
+<ul>
+<li>Disable root logins</li>
+<li>Limit user logins</li>
+<li>Disable password authentication</li>
+</ul>
+</li>
+<li>Install and start <a class="externallink" rel="nofollow" href="http://denyhosts.sourceforge.net/">denyhosts</a>:
+<pre>
+ yum install denyhosts
+ service denyhosts start
+ chkconfig --level 2345 denyhosts on
+</pre>
+</li>
+</ul>
+
+<h3><span id="Secure_your_certificate">Secure your certificate(s) and proxies</span></h3>
+<ul>
+<li>Don't export a certificate without a passphrase</li>
+<li>Don't store the passphrase of your certificate in a file</li>
+<li>Don't share your certificate(s) with other users</li>
+<li>Don't generate long proxies</li>
+</ul>
+
+<h3><span id="Take_care_of_user_accounts">Take care of user accounts</span></h3>
+<ul>
+<li>Don't create accounts for users who are not supposed to access the infrastructure</li>
+<li>Remove obsolete user accounts</li>
+<li>Don't share certificates or proxies between user accounts</li>
+</ul>
+
+<h3><span id="Restrict_your_firewall">Restrict your firewall</span></h3>
+<ul>
+<li>Restrict inbound connectivity. Most of the UI clients for job and file management don't require any open port.</li>
+</ul>
+
+<h3><span id="Keep_your_system_up-to-date">Keep your system up-to-date</span></h3>
+
+Update your software packages regularly:
+<pre>
+ yum update
+</pre>
+
+<h3><span id="Secure_NTP">Secure NTP</span></h3>
+See documentation at <a class="externallink" rel="nofollow" href="https://www.team-cymru.org/ReadingRoom/Templates/secure-ntp-template.html">https://www.team-cymru.org/ReadingRoom/Templates/secure-ntp-template.html</a>, in particular section &quot;UNIX ntpd&quot;.
+
+<!---------------------------------------------------------------------------------------------------------->
+
+        </div> <!-- .col-sm7 -->
+    </div> <!-- .row -->
+    </div><!-- .globcontainer -->
+	
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>

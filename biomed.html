@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Life-Science Grid Community - biomed</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="js/jquery.1.11.3.min.js"></script>
+  </head>
+  <body>
+
+    <script>
+        $(document).ready(function(){ $('#sidebar').load('sidebar.html'); });
+    </script>
+
+    <div class="globcontainer">
+    <div class="row">
+        <!-- Left menu --> 
+        <div id="sidebar" class="col-sm-3 "></div>
+
+        <!-- Body -->         
+        <div class="col-sm-8">
+      
+            <p class="text-right"><a href="http://operations-portal.egi.eu/vo/view/voname/biomed" class="btn btn-info active" role="button">biomed VO ID CARD</a></p>
+
+            <!-- Title -->
+            <h1> <a id="title" class="anchor" href="#title" aria-hidden="true"><span class="octicon octicon-link"></span></a>biomed</h1>
+            
+
+            <!-- Content goes here -->
+            <div class="panel panel-success">
+              <div class="panel-heading panel-title"><strong>Presentation</strong></div>
+              <div class="panel-body">
+                <p>The <strong>biomed Virtual Organization</strong> is a large scale international and multi-disciplinary VO supporting communities from the Life Sciences sector.            
+                The VO is operated on the EGI infrastructure.</p>
+                <p >Every user doing life-sciences with a certificate delivered by a trusted CA can be a VO member (see the <a href="http://operations-portal.egi.eu/vo/view/voname/biomed">Acceptable Usage Policy</a>).</p>
+            
+                <p>The VO is supported by many different sites, delivering access to tens of thousands CPU cores to its users, making it possible to develop highly demanding application such as the <a href="http://wisdom.eu-egee.fr/">WISDOM initiative</a>. It is also a vector for international collaboration in the area of life sciences and the creation of agile thematic VO sub-groups. Researcher affiliated to the biomed VO share storage and computing resources, as well as core grid services such as a single file catalog, making it possible to exchange data, processes and computing resources.</p>
+
+                <p>Life sciences is a broad scientific field which has been divided in three different sub-sectors. The medical imaging sector targets the computerized analysis of digital medical images. It includes medical data federation, compute-intensive medical procedures, large data sets processing and statistical studies over large populations. The bioinformatics sector targets gene sequences analysis. It includes genomics, proteomics and phylogeny. The drug discovery sector aims to help speed up the process of finding new drugs through in silico simulations of proteins structures and dynamics.</p>
+                
+                <p class="lead">Thematic groups</p>
+                <ul>
+                    <li>Medical Image analysis</li>
+                    <li>Bio Informatics</li>
+                    <li>Drug Discovery</li>
+                </ul>
+                
+                <p class="lead">Supporting National Grid Initiatives</p>
+                <p>The biomed VO is currently provided technical support, computing and storage facilities by the <i>National Grid Initiatives</i> <a href="http://operations-portal.egi.eu/vo/rd/vo/biomed">listed on the Operations Portal</a>.</p>
+             </div>
+            </div>  
+
+          <div class="panel panel-warning">
+            <div class="panel-heading panel-title"><strong>Publications</strong></div>
+            <div class="panel-body">
+                <p>The <a href="biomed-publications.html">list of publications</a> registers scientific papers whose results were somehow achieved using some resources provided by resource providers to the biomed VO.</p>
+
+                <p>Note that access to the biomed VO is not based on publication records, however, resource providers may ask for quantitative indicators to justify their support to the VO. Therefore, please, VO members, do fill this list with your own publications. This is of major importance for the sustainability of the VO.</p>
+                
+                <p><strong>Acknowledgment Statement</strong>. Any published work obtained using resources available in the biomed VO MUST acknowledge the usage of these resources by copying the Acknowledgment Statement provided in the <a href="http://operations-portal.egi.eu/vo/view/voname/biomed">VO ID CARD</a>.</p>
+            </div>
+          </div>
+          
+          <div class="panel panel-info">
+            <div class="panel-heading panel-title"><strong>How to join the biomed VO?</strong></div>
+            <div class="panel-body">
+                Thue <a href="http://operations-portal.egi.eu/vo/view/voname/biomed">biomed VO ID CARD</a> provides most of the information yoy may need to start up:
+                <ul>
+                    <li>Contact mailing-lists</li>
+                    <li>Acceptable Use Policy</li>
+                    <li>Resource Usage Acknowledgment Statement</li>
+                    <li>VOMS information</li>
+                </ul>
+
+                <p>To sign in with the VO, you shall need to:
+                <ul><li>Obtain a certificate from your CA: find your CA on the <a href="https://www.eugridpma.org/members/worldmap/">EUGridPMA map</a>. Keep it stored in your web browser.</li>
+                <li>With the same browser: apply for VO membership from the <a href="https://cclcgvomsli01.in2p3.fr:8443/voms/biomed/">VOMS server</a>.</li></ul>
+                </p>
+                
+            </div>
+          </div>
+
+          <div class="panel panel-danger">
+            <div class="panel-heading panel-title"><strong>Technical information</strong></div>
+            <div class="panel-body">
+                <p>On the <a href="biomed-technicals.html">technical information page</a>, we provide various technical resources we regards to the DIRAC and CVMFS services, and the User Interface (UI) installation and configuration.</p>
+                
+                <p>In addition the following are various useful links:</p>
+                <ul>
+                    <li><a href="http://www.ggus.org">GGUS front-line grid support</a></li>
+                    <li><a href="https://biomed.i3s.unice.fr/doku.php">Biomed technical teams</a></li>
+                    <li><a href="https://twiki.cern.ch/twiki/bin/view/EMI/EMIuiSRC">EMI UI Service Reference</a></li>
+                    <li><a href="https://twiki.cern.ch/twiki/pub/EMI/GenericInstallationConfigurationEMI3/middleware-ports.txt">Ports used in all EMI middleware services</a></li>
+                </ul>
+            </div>
+          </div>
+          
+        <h2><span id="Available_applications">Available applications</span></h2>
+        <div class="embed-responsive embed-responsive-4by3">
+        <iframe frameborder="0" src="http://appdb.egi.eu/gadgets/gadgets.php?op=appdb.applications.list&amp;oppars=vo:biomed;pagelength:5;pageoffset:0&amp;vpars=title:Applications%20Database;search:true&amp;vname=simplelist"></iframe>
+        </div>
+
+            </div> <!-- .col-sm7 -->
+    </div> <!-- .row -->
+    </div><!-- .globcontainer -->
+	
+    <!-- Bootstrap core JavaScript ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
