@@ -8,13 +8,7 @@
     padding-left: 40px;
     text-align: center;
 }
-
-#sidebar  a {
-    margin-top: 2px;
-}
-#sidebar  button {
-    margin-top: 2px;
-}
+#sidebar  a, button { margin-top: 2px; }
 
 body {
   padding:10px 0 20px 0;
@@ -31,9 +25,31 @@ h1, h2 {
   border-bottom: dotted #AAA 1px;
 }
 
-a small {
-  font-size:11px;
-  color:#777;
-  margin-top:-0.6em;
-  display:block;
+.bs-callout {
+  margin: 20px 0;
+  padding: 15px 30px 15px 15px;
+  border-left: 5px solid #eee;
+}
+.bs-callout h4 {
+  margin-top: 0;
+}
+.bs-callout p:last-child {
+  margin-bottom: 0;
+}
+.bs-callout code,
+  background-color: #fff;
+.bs-callout .highlight {
+}
+
+.bs-callout-danger {
+  background-color: #fcf2f2;
+  border-color: #ffa4a4;
+}
+.bs-callout-warning {
+  background-color: #fefbed;
+  border-color: #f1e7bc;
+}
+.bs-callout-info {
+  background-color: #f0f7fd;
+  border-color: #d0e3f0;
 }
