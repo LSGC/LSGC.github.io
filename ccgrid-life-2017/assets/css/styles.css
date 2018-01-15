@@ -46,7 +46,7 @@ footer {
 .navbar-default .navbar-nav>li>a,
 .navbar-default .navbar-text,
 .jumbotron a {
-   color: black;
+   color: #ddd;
 }
 
 .navbar-default,
@@ -54,8 +54,8 @@ footer {
    border: 0;
    border-radius: 0;
    background: #76b900;
-   background: linear-gradient(to right, #26b9d5, #fec140);
-   color: black;
+   background: linear-gradient(to right, #1F9098, #76b900);
+   color: white;
 }
 
 .jumbotron h1 {
@@ -67,11 +67,11 @@ footer {
    font-size: 18px;
    font-weight: 200;
    line-height: 1.4;
-   color: black;
+   color: #ddd;
 }
 
 .btn-success {
-   background-color: #26b9d5;
+   background-color: #76b900;
 }
 
 .key-dates td:last-child {

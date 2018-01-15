@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>CCGrid - Life 2015</title>
+  <meta name="Author" content="University of Notre Dame">
+  <meta name="Description" content="CCGrid-Life 2015 | May 4-7, 2015  | Shenzhen, Guangdong, China">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1187.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    p.p3 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times}
+    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    p.p7 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee}
+    li.li6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times}
+    span.s1 {text-decoration: underline}
+    span.s2 {text-decoration: underline ; color: #0000ee}
+    span.s3 {color: #000000}
+    td.td1 {width: 127.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    td.td2 {width: 71.0px; margin: 0.5px 0.5px 0.5px 0.5px; padding: 1.0px 1.0px 1.0px 1.0px}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1"><a href="file:///Users/sandragesing/Documents/ccgrid/">CCGrid - Life 2015</a></span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s1">Submission</span></li>
+  <li class="li1"><span class="s1">Programme Committee</span></li>
+</ul>
+<h1 style="margin: 0.0px 0.0px 16.0px 0.0px; font: 24.0px Times"><b>Workshop on Clusters, Clouds and Grids for Life Sciences</b></h1>
+<p class="p3">In conjunction with <a href="http://cloud.siat.ac.cn/ccgrid2015/index.html"><span class="s2">CCGrid 2015</span></a> - 15th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, May 4-7, 2015, Shenzhen, Guangdong, China</p>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Welcome</b></h2>
+<p class="p3">In the last 20 years, computational methods have become an important part of developing emerging technologies for the field of bioinformatics and biomedicine. Research areas such as biomodelling, molecular dynamics, genomics, neuroscience, cancer models, evolutionary biology, medical biology, biochemistry, biophysics, biotechnology, cell biology, nanobiotechnology, biological engineering, pharmacology, genetics therapy, or automatic diagnosis, rely heavily on large scale computational resources as they need to manage Tbytes or Pbytes of data with large-scale structural and functional relationships, TFlops or PFlops of computing power for simulating highly complex models, or many-task processes and workflows for processing and analyzing data.</p>
+<p class="p3">This new situation demands appropriate IT-infrastructures, where bioinformatic and medical data can be processed within an acceptable timespan - reaching from minutes in health-care applications to days in large-scale research projects. Large-scale distributed IT-systems such as Grids, Clouds and Big-Data-Environments are promising to address research, clinical and medical research community requirements. They allow for significant reduction of computational time for running large experiments, for speeding-up the development time for new algorithms, for increasing the availability of new methods for the research community, and for supporting large-scale multi-centric collaborations. However, specific challenges in the employment of such systems for medical applications such as security, reliability and user-friendliness, often impede straightforward adoption of existing solutions from other application domains.</p>
+<p class="p3">This workshop aims at bringing together developers of bioinformatic and medical applications and researchers in the field of distributed IT systems. On the one hand, it addresses researchers who are already employing distributed infrastructure techniques in bioinformatic applications, in particular scientists developing data- and compute-intensive bioinformatic and medical applications that include multi-data studies, large-scale parameter scans or complex analysis pipelines. On the other hand, it addresses computer scientists working in the field of distributed systems interested in bringing new developments into bioinformatic and medical applications.</p>
+<p class="p3">The goals are to exchange and discuss existing solutions and latest developments in both fields, and to gather an overview of challenges (technologies, achievements, gaps, roadblocks). The workshop further intends to identify common requirements to lead future developments in collaboration between Life Sciences and Computing Sciences, and to collaboratively explore new ideas and approaches to successfully apply distributed IT-systems in translational research, clinical intervention, and decision-making.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Key Dates</b></h3>
+<table cellspacing="0" cellpadding="0">
+  <tbody>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6">Papers Due</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p6">Jan 8, 2015</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6">Author Notifications</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p6">Feb 15, 2015</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6">Camera Ready Papers Due</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p6">Mar 15, 2015</p>
+      </td>
+    </tr>
+    <tr>
+      <td valign="middle" class="td1">
+        <p class="p6">Conference</p>
+      </td>
+      <td valign="middle" class="td2">
+        <p class="p6">May 4-7, 2015</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Workshop Chairs</b></h3>
+<ul class="ul1">
+  <li class="li6">Jesus Carretero, University Carlos III of Madrid, Spain</li>
+  <li class="li6">Javier Garcia Blas, University Carlos III of Madrid, Spain</li>
+  <li class="li6">Sandra Gesing, U. Notre Dame, IN, USA</li>
+  <li class="li6">Johan Montagnat, CNRS, France</li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Steering Committee</b></h3>
+<ul class="ul1">
+  <li class="li6">Dagmar Krefting, University of Applied Sciences Berlin, Germany</li>
+  <li class="li6">Silvia D. Olabarriaga, AMC / University of Amsterdam, Netherlands</li>
+  <li class="li6">Tristan Glatard, CNRS, France</li>
+  <li class="li6">Aaron Golden, A. Einstein College of Medicine, NY, USA</li>
+  <li class="li6">Manuel Desco, Hospital Gregorio Maranon de Madri, Spain</li>
+  <li class="li6">Dana Petcu, University of Timisoara, Romania</li>
+</ul>
+<h2 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 18.0px Times"><b>Submission</b></h2>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Topics of Interest</b></h3>
+<p class="p3">Contributions are expected but not restricted to the following topics:</p>
+<ul class="ul1">
+  <li class="li6">Detailed application use-cases highlighting achievements and roadblocks</li>
+  <li class="li6">Exploitation of distributed IT resources for HealthCare and research applications, for example medical imaging, disease modeling, bioinformatics, Public health informatics, drug discovery, clinical trials</li>
+  <li class="li6">Service and/or algorithm design and implementation applicable to medical and bioinformatic applications</li>
+  <li class="li6">Improved energy consumption of bio applications using clouds</li>
+  <li class="li6">Modeling and simulation of complex biological processes</li>
+  <li class="li6">Genomics and Molecular Structure evolution</li>
+  <li class="li6">Molecular Dynamics</li>
+  <li class="li6">Clouds for big data manipulation in bioinformatics and biomedicine</li>
+  <li class="li6">Ontologies and biomedical text mining</li>
+  <li class="li6">Biological data mining and visualization</li>
+  <li class="li6">Error handling and fault tolerance</li>
+  <li class="li6">Distributed and heterogeneous medical and bioinformatics data management</li>
+  <li class="li6">Big Medical and Bioinformatics Data applications and solutions</li>
+  <li class="li6">Data privacy, security and access control</li>
+  <li class="li6">Development environments for distributed applications</li>
+  <li class="li6">Programming paradigms and tools for bio-applications</li>
+  <li class="li6">Scientific gateways and user environments targeting distributed medical and bioinformatic applications</li>
+  <li class="li6">Dedicated distributed infrastructures and HPC systems</li>
+  <li class="li6">Interoperability for exchanging data, algorithms and analysis pipelines</li>
+  <li class="li6">Success stories and show stoppers</li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Submission Guidelines</b></h3>
+<p class="p3">Authors are asked to prepare their manuscripts according to the IEEE format for conference proceedings. <a href="http://www.ieee.org/conferences_events/conferences/publishing/templates.html"><span class="s2">IEEE Manuscript Templates</span></a></p>
+<p class="p3">Submitted manuscripts should be structured as technical papers and may not exceed 10 letter-size (8.5 x 11) pages including figures, tables and references.</p>
+<p class="p3">The initial submission needs to be in pdf format.</p>
+<p class="p3">Submitted papers must represent original unpublished research that is not currently under review for any other conference or journal.</p>
+<p class="p3">Manuscripts must be submitted to the submission online system EasyChair no later than the indicated submission deadline. <a href="https://easychair.org/conferences/?conf=ccgridlife2015"><span class="s2">EasyChair Submission </span></a>Please register for an account as author if you do not already have one. If you cannot access the submission website or have difficulties completing your submission, please contact the organization committee for assistance.</p>
+<p class="p3">All papers will be reviewed by at least 3 independent reviewers from the international program committee. Papers will be selected based on their originality, their interest for the research community, the quality of the use-case description, the description of the technical solution, the impact of the application and/or technical description and the status of the work.</p>
+<p class="p3">Selected papers will be presented at the workshop and published in the CCGrid conference proceedings.</p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Programme Committee</b></h3>
+<ul class="ul1">
+  <li class="li6">Steve Brewer, University of Southampton, UK</li>
+  <li class="li6">Jesus Carretero, University Carlos III of Madrid, Spain</li>
+  <li class="li6">Manuel Desco, Hospital Gregorio Maranon de Madri, Spain</li>
+  <li class="li6">Scott Emrich, University of Notre Dame, IN, USA</li>
+  <li class="li6">Alban Gaignard, CNRS, France</li>
+  <li class="li6">Javier Garcia Blas, University Carlos III of Madrid, Spain</li>
+  <li class="li6">Sandra Gesing, University of Notre Dame, IN, USA</li>
+  <li class="li6">Tristan Glatard, CNRS, France</li>
+  <li class="li6">Aaron Golden, A. Einstein College of Medicine, NY, USA</li>
+  <li class="li6">Dagmar Krefting, University of Applied Sciences Berlin, Germany</li>
+  <li class="li6">Jens Krüger, University of Tübingen, Germany</li>
+  <li class="li6">Yannick Legre, EGI.eu, Amsterdam, Netherlands</li>
+  <li class="li6">Ivan Merelli, Institute for Biomedical Technologies, Segrate, Italy </li>
+  <li class="li6">Luciano Milanesi, CNT ITB, Italy</li>
+  <li class="li6">Johan Montagnat, CNRS/I3S, France</li>
+   <li class="li6">Jarek Nabrzyski, University of Notre Dame, IN, USA</li>
+  <li class="li6">Silvia D. Olabarriaga, AMC / University of Amsterdam, Netherlands</li>
+  <li class="li6">Horacio Pérez-Sánchez, University of Murcia, Spain</li>
+  <li class="li6">Dana Petcu, University of Timisoara, Romania</li>
+  <li class="li6">Jonathan Silverstein, NorthShore University HealthSystem, IL, USA</li>   
+  <li class="li6">Richard Sinnott, University of Melbourne, Australia</li>
+   <li class="li6">James Taylor, Emory University, USA</li>
+</ul>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Workshop Venue</b></h3>
+<p class="p7"><span class="s1"><a href="https://www.google.com/maps/search/hilton+Shenzhen,+518067,+China">Hilton Shenzhen Shekou Nanhai<br>
+1177 Wanghai Rd, Nanshan District <br>
+Shenzhen, 518067, China</a></span></p>
+<h3 style="margin: 0.0px 0.0px 14.0px 0.0px; font: 14.0px Times"><b>Related Workshops</b></h3>
+<ul class="ul1">
+  <li class="li1"><a href="http://staff.science.uva.nl/%7Esilvia/CCGrid-Health2009/index.html"><span class="s1">CCGrid-Health 2009</span></a></li>
+  <li class="li1"><a href="http://staff.science.uva.nl/%7Esilvia/CCGrid-Health2010/index.html"><span class="s1">CCGrid-Health 2010</span></a></li>
+  <li class="li1"><a href="http://www.pneumogrid.de/web/miccai-hpdci/home"><span class="s1">HP-MICCAI/MICCAI-DCI 2011</span></a></li>
+  <li class="li1"><a href="http://proton.unice.fr/DCICTIA-MICCAI12/"><span class="s1">DCICTIA-MICCAI 2012</span></a></li>
+  <li class="li1"><a href="http://lsgc.org/ccgrid-health-2014//"><span class="s1">CCGrid-Health 2014</span></a><span class="s3"> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/"><span class="s1">C4Bio 2014</span></a></span></li>
+</ul>
+<p class="p3">University of Notre Dame</p>
+</body>
+</html>
