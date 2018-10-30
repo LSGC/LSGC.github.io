@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="CCGrid-Life 2017 | May 14-17, 2017  | Madrid, Spain">
+   <meta name="author" content="University of Applied Sciences Berlin (HTW Berlin)">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>CCGrid - Life 2017</title>
+
+   <link rel="stylesheet" href="../bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/bootflat.min.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700">
+</head>
+
+<body>
+   <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">CCGrid - Life 2017</a>
+         </div>
+         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="index.html#Submission">Submission</a>
+               </li>
+               <li><a href="index.html#Programme-Committee">Programm Committee</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div class="jumbotron">
+      <div class="container">
+         <h1>Workshop on Clusters, Clouds and Grids for Life Sciences</h1>
+         <p>In conjunction with <a href="https://www.arcos.inf.uc3m.es/wp/ccgrid2017/">CCGrid 2017</a> - 17th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, May 14–17, 2017, Madrid, Spain</p>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h2>Abstracts
+               <small>May 14, 8:45h-12:30h at <a href="http://www.melia.com/en/hotels/spain/madrid/melia-galgos/index.html">Melia Los Galgos Hotel</a> </small>
+            </h2>
+            <table class="table table-bordered table-striped">
+               <tbody>
+                 <tr>
+                  <td>
+                     <h4 id="welcome">Welcome and Introduction by the Workshop Chairs</h4>
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+                   	<h4 id="medicalimaging">Medical Imaging Processing on a Big Data platform using Python: Experiences with Heterogeneous and Homogeneous Architectures</h4>
+			<i>Estefanía Serrano, Javier Garcia Blas, Jesus Carretero and Monica Abella</i>
+			<br><br>
+			The apparition of new paradigms, programming models, and languages that offer better programmability and better performance turns the implementation of current scientific applications into a less time-consuming task than years ago. One significant example of this trend is the MapReduce programming model and its implementation using Apache Spark. Nowadays, this programming model is mainly used for data analysis and machine learning applications, although it has been expanded to its usage in the HPC community. On the side of programming languages, Python has positioned itself as an alternative to other scientific programming languages, such as Matlab or Julia.
+In this work we explore the capabilities of Python and Apache Spark as partners in the implementation of the backprojection operator of a CT reconstruction application. We present two interesting approaches with two different types of architectures: a heterogeneous architecture including NVidia GPUs and a full performance CPU mode with the compatibility with C/C++ native source code. We experimentally demonstrate that current CPU-based implementations scale with the number of computational units.
+                  </td>
+               <tr>
+                  <td>
+			<h4 id="humanbrainmodeling">Analog-Digital Approach in Human Brain Modeling</h4>
+			<i>Kirill Lysov, Alexander Bogdanov, Alexander Degtyarev, Dmitriy Guschanskiy, Ananieva Nataliya, Zalutskaya Nataliya and Neznanov Nikolay</i>
+			<br><br>
+			Many companies and institutions in their attempts construct decision-making system, face a bottleneck in performance of their systems. Training neural networks can take from several days to several weeks. The traditional approach suggests modification of modern systems and microcircuits as long as their performance reaches a permissible limit. A different approach, unconventional, looks for opportunities in computing inspired by the human brain, neuromorphic computing. The idea was proposed by the engineer Carver Mead in the 80s and suggests combining artificial neural networks with specialized microcircuits. The architecture of the microchip needs to reproduce the mechanisms of the human brain and to be a kind of hardware support for neural networks. Last decade is characterized by a sharp growth of interest in neuromorphic computing, human brain modeling and peculiarities of how it works during making decisions. This is evidenced by the launch of a large-scale research programs like DARPA SyNAPSE (USA) and the Human Brain Project (EU), the purpose of which is to build a microprocessor system, which resembles the human brain in functionality, size and energy consumption. Existing models of the brain even on powerful supercomputers require significant computation time and are not yet able to solve problems in real time. Since the human brain consists of two parts with different functions and different data processing principles, there is a very promising approach which suggests combining digital and analog systems into single one. In current collaboration we incorporate some results of study of activity of human brain as a base of building of hybrid computational system and foundation to the approach of running it.
+                  </td>
+               <tr>
+               <tr>
+                   <td>
+			<h4 id="biopet">Biopet: towards Scalable, Maintainable, User-friendly, Robust and Flexible NGS data analysis pipelines</h4>
+			<i>Peter van 'T Hof, Hailiang Mei, Sander Bollen, Jeroen Laros, Wibowo Arindrarto and Szymon Kielbasa</i>
+			<br><br>
+			Because of the rapid decreasing of sequencing cost, more research and clinical institutes are generating Next Generation Sequencing data at an increasing and impressive scale. University Medical Centers in the Netherlands are sequencing thousands patients a year each as part of their routine diagnosis. On the research front, the GoNL project and BIOS project coordinated by the BBMRI-NL consortium have sequenced 770 whole genome DNA samples and over 4000 RNA samples collected from a number of Dutch biobanks. In 2016, the deployment of Illumina X Ten sequencer at the Hartwig Medical Foundation provides a sequencing capacity of 18,000 whole genome DNA samples per year. Processing these petabyte scale datasets requires revolutionary thinking and solutions in the computing and storage infrastructure and the data analysis pipelines.<br>
+At Leiden University Medical Center, we have developed a GATK-Queue based open source pipeline framework – BIOPET (Bioinformatics Pipeline Execution Toolkit). We implemented all our commonly used NGS tools as Queue modules in the form of Scala classes. Together with those that are already supported in GATK-Queue like GATK variant-calling and Picard tools, we have a full set of NGS tools at our disposal as Scala classes that are further combined into pipeline functions. Besides meeting the various standard requirements for NGS pipelines such as reentrancy, the BIOPET framework also offers a list of advanced features, such as live debugging, test and meta-analysis frameworks and easy deployment. BIOPET framework can run on various types of HPC infrastructure through its DRMAA support, e.g., SGE, SLURM, PBS.
+                  </td>
+                 <tr>
+                  <td>
+                   	<h4 id="sparkvsmpi">Using the Cloud for parameter estimation problems: comparing Spark vs MPI with a case-study</h4>
+			<i>Patricia Gonzalez, Xoán C. Pardo, David Rodríguez Penas, Diego Teijeiro, Doallo Ramón and Julio Banga</i>
+			<br><br>
+			Systems biology is an emerging approach focused in generating new knowledge about complex biological systems by combining experimental data with mathematical modeling and advanced computational techniques. Many problems in this field are extremely challenging and require substantial supercomputing resources to be solved. This is the case of parameter estimation in large-scale nonlinear dynamic systems biology models. Recently, Cloud Computing has emerged as a new paradigm for on-demand delivery of computing resources. However, scientific computing community has been quite hesitant in using the Cloud, simply because traditional programming models do not fit well with the new paradigm, and the earliest cloud programming models do not allow most scientific computations being efficiently run in the Cloud. In this paper we explore and compare two distributed computing models: the MPI (message-passing interface) model, that is high-performance oriented, and the Spark model, which is throughput oriented but outperforms other cloud programming solutions adding improved support for iterative algorithms through in-memory computing. The performance of a very well known metaheuristic, the Differential Evolution algorithm, has been thoroughly assessed using a challenging parameter estimation problem from the domain of computational systems biology. The experiments have been carried out both in a local cluster and in the Microsoft Azure public cloud, allowing for the performance evaluation in both infrastructures. 
+                  </td>
+               <tr>
+                  <td>
+			<h4 id="supervision">Fine-grained Supervision and Restriction of Biomedical Applications in Linux Containers</h4>
+			<i>Michael Witt, Christoph Jansen, Dagmar Krefting and Achim Streit</i>
+			<br><br>
+			Applications for data analysis of biomedical data are complex programs and often consist of multiple components. Re-usage of existing solutions from external code repositories or program libraries (e.g. MATLAB Central, EEGlab or PhysioNet) is common in algorithm development. To ease reproducibility and transfer of algorithms and required components into distributed infrastructures Linux containers can be used. Infrastructures can use Linux container execution to provide a generic processing pipeline for user submitted algorithms.<br>
+A thorough review of the applications and their components provided in containers is typically not available due to their complexity or restricted source code access. This results in an uncertainty about actions performed by diverse parts of the application during runtime.<br>
+In this paper we describe measures and a solution to secure the execution of a \emph{MATLAB}-based application for normalization of multidimensional biosignal recordings. The application and the required runtime environment are installed in a Docker-based container. This container is distributed alongside required data inside a OpenStack infrastructure. To secure the infrastructre a fine-grained restricted environment (sandbox) for the execution of the untrusted program using standard Linux-kernel interfaces is used. The rule set in our sandbox is defined on system call level. Filtering based on system calls is suited to prevent malicious actions as they typically require to interact with the operating system (e.g. by accessing the filesystem or network resources). With the restriction of our solution to use only standard Linux-kernel interfaces, it is suited for the given container-based environment, where applications are limited to the shared kernel capabilities.<br>
+Due to the low-level character of system call interaction with the operating system and the large amount of system calls issued by a complex framework as the MATLAB-runtime, the creation of an adequate rule set for the sandbox may become challenging. Therefore the presented solution includes a component that provides application monitoring based on issued system calls. This enables the user to collect data about system call interaction with the operating system. These data can afterwards be used to define the required rules for the application sandbox. Performance evaluation of the application execution time shows no significant impact by the resulting sandbox, while detailed monitoring may increase runtime up to over 420%.
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+			<h4 id="mhealth">Toward an Architecture for mHealth Web Data Choreography</h4>
+			<i>Saranya Radhakrishnan and D. Cenk Erdil​</i>
+			<br><br>
+			Web information systems have been increasingly used in medical sciences,especially in mobile health (mHealth) data collection. Clinical informatics, for example, heavily relies on collecting both patient-level and population-level data. This data then becomes major point of focus for clinical research activities. Advances in many medical sciences bring
+bioinformatics and health informatics together at intersections at select fields of study, in particular in public health. For example, with increased importance of biomarkers, population-level data–typically studied exclusively in public health–, has also become a major component in bioinformatics. Classical population-level data collection activities in public health involves multiple teams of trans-disciplinary professionals to go out in the field, and collect data. From the perspective of global health, collecting health data is a challenging task, not only due to weak informatics infrastructure, but also with unique health professional roles that are common in resource-limited settings. There is also a significant need to orchestrate collection of data from the field, which is hard due to many factors. To address this, we propose increased use of autonomous data collection and workflow choreography, via a data adaptation module. This module performs an early cleaning and analysis of data, and also serves as
+a replication point for collected data. The data adaptation module can either be placed centrally, or can be divided into many, smaller units, including distributed mobile nodes that retain smaller pieces of collected data. Our approach allows flexible storage alternatives for patient-level and population-level data, while not increasing the complexity of existing data collection activities. Furthermore, our framework can be placed in existing data architectures with- out any alteration in existing system design.
+​
+                  </td>
+               </tr>
+              <tr>
+                  <td>
+			<h4 id="paneldiscussion">Discussion: Perspectives and Challenges in Biomedical Analytics </h4> 
+			<i>Moderation: Dagmar Krefting</i>
+			<br><br>
+                  </td>
+               </tr>
+             </tbody></table>
+         </div>
+      </div>
+      <div class="row">
+
+          <div class="col-md-6">
+            <h3>Workshop Venue</h3>
+            <p>
+               <a href="http://www.melia.com/en/hotels/spain/madrid/melia-galgos/index.html">Melia Los Galgos Hotel<br>
+               Calle de Claudio Coello, 139<br>
+		Madrid, Spain</a>
+            </p>
+	</div>
+        <div class="col-md-6">
+            <h3>Related Workshops</h3>
+            <ul class="list-unstyled">
+               <li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a>
+               </li>
+               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
+               </li>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <footer>
+         <p>University of Applied Sciences Berlin</p>
+      </footer>
+   </div>
+<!--<div style="background-color: rgba(0,0,0,0.7); display: flex; align-items: center;" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header">  <h3>Welcome</h3> 18.12.2015 <br> Thank you for your interest in CCGrid-Life. We would have loved to meet you at CCGrid-Life 2016. But we are very sorry to inform you that due to external reasons, we decided to withdraw the workshop. We hope we can welcome you at CCGrid-Life in conjunction with <a href="http://conference.researchbib.com/view/event/49167">CCGrid 2017 in Madrid</a>, so please check this site at times. <br> <br>  
+
+           <h4>Previous Workshops</h4>
+            <ul class="list-unstyled">
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
+              </li>
+               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a>
+               </li>
+                <li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a>
+               </li>
+            </ul>
+  </div>-->
+   </div> </div> </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+/*
+   COLORS
+
+   blue: #0082d1
+   green: #76b900
+
+ */
+
+/*
+   ELEMENTS
+ */
+
+body {
+   line-height: 1.5;
+}
+
+h2 {
+   border-bottom: 1px solid #ddd;
+}
+
+h3 ~ h3 {
+   margin-top: 40px;
+}
+
+a {
+   color: #0082d1;
+}
+
+footer {
+   margin-top: 20px;
+   padding-top: 10px;
+   border-top: 1px solid #ddd;
+   color: #ccc;
+   text-align: center;
+}
+
+/*
+   CLASSES
+ */
+
+.navbar {
+   margin-bottom: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav>li>a,
+.navbar-default .navbar-text,
+.jumbotron a {
+   color: black;
+}
+
+.navbar-default,
+.jumbotron {
+   border: 0;
+   border-radius: 0;
+   background: #76b900;
+   background: linear-gradient(to right, #26b9d5, #fec140);
+   color: black;
+}
+
+.jumbotron h1 {
+   font-size: 36px;
+   margin: 30px 0;
+}
+
+.jumbotron p {
+   font-size: 18px;
+   font-weight: 200;
+   line-height: 1.4;
+   color: black;
+}
+
+.btn-success {
+   background-color: #26b9d5;
+}
+
+.key-dates td:last-child {
+   width: 110px;
+}
+
+.list-group {
+   border-radius: 0;
+   box-shadow: none;
+   border: 1px solid #ddd;
+}
+
+.list-group-item {
+   border-top-color: #ddd;
+}
+
+.list-striped > li:nth-child(odd) {
+   background-color: #f9f9f9;
+}
+
+@media (min-width: 960px) {
+   .container,
+   .jumbotron .container {
+      max-width: 960px;
+   }
+}
+
+/* Zweispaltige Liste
+
+#Programme-Committee + ul {
+   padding-left: 1.3em;
+}
+
+@media (min-width: 600px) {
+   #Programme-Committee + ul {
+      -webkit-column-count: 2;
+      -moz-column-count: 2;
+      -ms-column-count: 2;
+      -o-column-count: 2;
+      column-count: 2;
+      padding-left: 0;
+      list-style-position: inside;
+   }
+   #Programme-Committee + ul li {
+      padding-left: 1em;
+      text-indent: -1em;
+   }
+}
+
+*/
