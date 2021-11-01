@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="utf-8">
+   <meta name="description" content="CCGrid-Life 2019 | May 14-17, 2019  | Larnaca, Cyprus">
+   <meta name="author" content="University of Applied Sciences Berlin (HTW Berlin)">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>CCGrid - Life 2019</title>
+
+   <link rel="stylesheet" href="../bootstrap/3.3.5/css/bootstrap.min.css">
+   <link rel="stylesheet" href="assets/css/bootflat.min.css">
+   <link rel="stylesheet" href="assets/css/styles.css">
+   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600,700">
+</head>
+
+<body>
+   <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+         <div class="navbar-header">
+            <a class="navbar-brand" href="./index.html">CCGrid - Life 2019</a>
+         </div>
+         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+               <li><a href="#Submission">Submission</a>
+               </li>
+               <li><a href="#Special-Issue">Special Issue</a>
+               </li>
+               <li><a href="#Programme-Committee">Programm Committee</a>
+               </li>
+            </ul>
+         </div>
+      </div>
+   </div>
+
+   <div class="jumbotron">
+      <div class="container">
+         <h1>Workshop on Clusters, Clouds and Grids for Life Sciences</h1>
+         <p><a href="http://ccgrid2019.ucy.ac.cy/"> In conjunction with CCGrid 2019 - 19th IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing, May 14–17, 2019, Larnaca, Cyprus</a></p>
+      </div>
+   </div>
+
+   <div class="container">
+      <div class="row">
+         <div class="col-md-12">
+            <h2>Abstracts
+              <small>May 14, 9:00h-12:30h at <a href="https://www.ccgrid2019.org/pages/venue.html">Golden Beach Bay Hotel Hotel</a> </small>
+             </h2>
+            <table class="table table-bordered table-striped">
+               <tbody>
+                 <tr>
+                  <td>
+                     <h4 id="welcome">Welcome and Introduction by the Workshop Chairs</h4>
+                  </td>
+               </tr>
+                 <tr>
+                  <td>
+                     <h4 id="keynote1">Towards a generic provenance model for Life Science designed as an European Open Science Cloud service</h4>
+			<i>Isabelle Perseil</i>
+			<br><br>
+Dr. Isabelle Perseil is heading the Computational Science Coordination and e-infrastructures at INSERM http://cvscience.aviesan.fr/cv/857/isabelle-perseil
+
+She manages a small group of experts that provides the best practices in software engineering, Data Management, Big data, Machine Learning, HPC, Grids, Cloud Computing, parallel computing to 300 research units (1200 research teams). The Computational Science Coordination is working with 13 regional administrations and 23 regional Mesocenters in France to pool the computational resources (grids and HPC) and train engineers and researchers to HPC (OpenMP, MPI and now ORWL) and Big data (MapReduce, Hadoop, Spark, Flink, Storm). Isabelle Perseil has taught UML at Ecole Centrale de Paris for 15 years and is supervising  thesis in the domain of parallel computing. She has been recently elected at the Technical Advisory Board of RDA.
+
+Isabelle Perseil is involved in many European research projects, among them: EOSC-LIfe, an INFRAEOSC-04 accepted European project headed by ELIXIR, in which Isabelle Perseil is co-leading WP6:FAIRification and provenance services
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+                   	<h4 id="mrireconstruction">Exploiting stream parallelism of MRI reconstruction using GrPPI over multiple back-ends</h4>
+			<i>Javier Garcia Blas, David Del Río Astorga, Jose Daniel Garcia and Jesus Carretero.</i>
+			<br><br>
+			In recent years, on-line processing of data streams has been established as a major computing paradigm. This is due mainly to two reasons: first, more and more data are generated in near real-time that need to be processed; the second reason is given by the need of efficient parallel applications. However, the above-mentioned areas expose a tough challenge over traditional data-analysis techniques, which have been forced to evolve to a stream perspective. In this work we present an experimental study of a stream-aware multi-staged application, which has been implemented using GrPPI, a generic and reusable parallel pattern interface for C++ applications. We demonstrate the benefits of using this interface in terms of programability, performance, and scalability.
+                  </td>
+               <tr>
+                  <td>
+			<h4 id="cancerdetection">Reproducibility and Performance of Deep Learning Applications for Cancer Detection in Pathological Images</h4>
+			<i>Christoph Jansen, Bruno Schilling, Klaus Strohmenger, Michael Witt, Jonas Annuscheit and Dagmar Krefting.</i>
+			<br><br>
+			Convolutional Neural Networks (CNN) have shown to be successful in automatic cancer detection in pathological images. However, such data-driven experiments are difficult to reproduce, because the CNN code may require CUDA-enabled Nvidia GPUs for acceleration and the training is performed on large datasets, that are often stored on a researcher's local computer, inaccessible to others.
+
+We introduce the RED file format for reproducible experiment description, where executable programs are packaged as containerized applications and are referenced as Docker container images. Data inputs and outputs are described in terms of network resources using standard transmission and authentication protocols instead of local file paths. Following the FAIR guiding principles, the RED format is based on and compatible with the established Common Workflow Language commandline tool specification. RED files can be interpreted by the accompanying Curious Containers (CC) software. Arbitrarily large datasets are mounted inside running Docker containers via FUSE network filesystems like SSHFS.
+
+The approach we have taken heavily relies on network bandwidth for the CNN training time. We have benchmarked SSHFS compared to SSD and NFS in terms of filesystem read speeds and in terms of a of a CNN training scenario, both as sequential and parallel workloads in a compute cluster via two 10 Gb/s interfaces. In our CCN training scenario, network file access via SSHFS introduces a factor of 1.8 to the execution time, compared to a local SSD.
+
+We are convinced that RED and CC can greatly improve the reproducibility of deep learning workloads and data-driven experiments. This is in particular important in clinical scenarios where the result of an analysis may contribute to a patient's treatment.
+                  </td>
+               <tr>
+               <tr>
+                   <td>
+			<h4 id="opendose">Enabling Large Scale Data Production for OpenDose with GATE on the EGI Infrastructure</h4>
+			<i>Maxime Chauvin, Gilles Mathieu, Sorina Camarasu-Pop, Axel Bonnet, Manuel Bardiès and Isabelle Perseil</i>
+			<br><br>
+			The OpenDose collaboration has been established to generate an open and traceable reference database of dosimetric data for nuclear medicine, using a variety of Monte Carlo codes. The amount of data to generate requires to run tens of thousands of simulations per anthropomorphic model, for a total computation time estimated to millions of CPU hours. To tackle this challenge, a project has been initiated to enable large scale data production with the Monte Carlo code GATE. Within this project, CRCT, Inserm CISI and CREATIS worked on developing solutions to run Gate simulations on the EGI grid infrastructure using existing tools such as VIP and GateLab. Those developments include a new GATE grid application deployed on VIP, modifications to the existing GateLab application, and the development of a client code using a REST API for using both. Developed tools are now in production and have already allowed running 30% of GATE simulations for the first 2 models (adult male and adult female). On-going and future work includes improvements both to code and submission strategies, definition and implementation of a long-term storage strategy, extension to other models, and generalisation of the tools to the other Monte Carlo codes used within the OpenDose collaboration.
+                  </td>
+                 <tr>
+                  <td>
+                   	<h4 id="collaboration">On distributed collaboration for biomedical analyses</h4>
+			<i>Fatima-Zahra Boujdad, Alban Gaignard, Mario Südholt, Wilmer Garzón Alfonso, Luis Daniel Benavides Navarro and Richard Redon</i>
+			<br><br>
+			SCooperation of research groups is nowadays common for the development and execution of biomedical analyses. Multiple partners contribute data in this context, data that is often centralized for processing at some cluster-based or supercomputer-based infrastructure. In contrast, real distributed collaboration that involves processing of data from several partners at different sites is rare. However, such distributed analyses are often very interesting, in particular, for scalability, security and privacy reasons.
+
+In this article, we motivate the need for real distributed biomedical analyses in the context of several on-going projects, including the I-CAN project that involves 34 French hospitals and affiliated research groups. We present a set of distributed architectures for such analyses that we have derived from discussions with four different medical research groups and a study of related work. These architectures allow for scalability, security/privacy and reproducibility issues to be taken into account. Finally, we illustrate how such architectures can be implemented with specific tools from computer science and bioinformatics. 
+                  </td>
+                <tr>
+                  <td>
+			<h4 id="sciencegateway">Towards a Science Gateway for Bioinformatics: Experiences in the Brazilian System of High Performance Computing</h4>
+			<i>Kary Ocaña, Marcelo Galheigo, Carla Osthoff, Luiz Gadelha, Antônio Tadeu A. Gomes, Daniel de Oliveira, Fabio Porto and Ana Tereza Vasconelos​</i>
+			<br><br>
+			Science gateways bring out the possibility of reproducible science as they are integrated to reusable techniques, data and workflow management systems, security mechanisms, and high performance computing (HPC). We introduce Bioinfo-Portal, a science gateway that executes bioinformatics applications using HPC and data management resources provided by the Brazilian National HPC System (SINAPAD). BioinfoPortal follows the Software as a Service (SaaS) model and it is freely available for academic use. Overall, this paper addresses an investigation on some of HPC features in the BioinfoPortal gateway system and analyzes of their impacts. We analyzed the scalability of RAxML in HPC clusters and general features from application executions (dataset, software parameters, efficiency of machines capacity) using machine learning techniques for predicting the effective allocation/usage of computational resources for the gateway. The machine-learning strategies appoint the best machine setup in a heterogeneous environment for the executions of applications that presented at least 75% of efficiency.​
+                  </td>
+               </tr>
+                <tr>
+                  <td>
+			<h4 id="keynote2">Towards data intensive aware programming models for Exascale systems</h4>
+			<i>Javier Garcia Blas​</i>
+			<br><br>
+			Extreme Data is an incarnation of Big Data concept distinguished by the massive amounts of data that must be queried, communicated and analyzed in (near) real-time by using a very large number of memory/storage elements and Exascale computing systems. Immediate examples are the scientific data produced at a rate of hundreds of gigabits-per-second that must be stored, filtered and analyzed, the millions of images per day that must be mined (analyzed) in parallel, the one billion of social data posts queried in real-time on an in-memory components database. Traditional disks or commercial storage cannot handle nowadays the extreme scale of such application data.
+
+Following the need of improvement of current concepts and technologies, ASPIDE’s activities focus on data-intensive applications running on systems composed of up to millions of computing elements (Exascale systems). Practical results will include the methodology and software prototypes that will be designed and used to implement Exascale applications.
+The ASPIDE project will contribute with the definition of a new programming paradigms, APIs, runtime tools and methodologies for expressing data-intensive tasks on Exascale systems, which can pave the way for the exploitation of massive parallelism over a simplified model of the system architecture, promoting high performance and efficiency, and offering powerful operations and mechanisms for processing extreme data sources at high speed and/or real-time.
+                 </td>
+               </tr>
+                <tr>
+                  <td>
+			<h4 id="bigdata">Big Data Analytics Exploration of Green Space and Mental Health in Melbourne</h4>
+			<i>Richard Sinnott and Ying Hu</i>
+			<br><br>
+			Numerous researchers have shown that urban green space, e.g. parks and gardens, is positively associated with health and general well-being. However, these works are typically based on surveys that have many limitations related to the sample size and the questionnaire design. Social media offers the possibility to systematically assess how human emotion is impacted by access to green space at a far larger scale that is more representative of society. In this paper, we explore how Twitter data was used to explore the relationship between green space and human emotion (sentiment). We consider the relationship between Twitter sentiment and green space in the suburbs of Melbourne and consider the impact of socio-economics and related demographic factors. We develop a linear model to explore the extent that access to green space has on the sentiment of tweeters..​
+                  </td
+               </tr>
+              <tr>
+                  <td>
+			<h4 id="paneldiscussion">Discussion: Lessons Learned and Future Perspectives</h4> 
+			<i>Moderation: Workshop Chairs</i>
+			<br><br>
+                  </td>
+               </tr>
+             </tbody></table>
+         </div>
+      </div>
+      <div class="row">
+
+<!--footer-->
+    	
+      <div class="row">
+      <div class="col-md-6">
+            <h3>Workshop Venue</h3>
+            <p>
+               <a href="http://ccgrid2019.ucy.ac.cy/pages/venue.html">Golden Bay Beach Hotel <br>
+               Larnaca<br>
+			Cyprus	</a>
+            </p>
+	</div>
+        <div class="col-md-6">
+            <h3>Related Workshops</h3>
+            <ul class="list-unstyled">
+               <!--<li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a></li>-->
+               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a></li>
+               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a></li>
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a></li>
+                <li><a href="http://lsgc.org/ccgrid-life-2017//">CCGrid-Life 2017</a></li>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <footer>
+         <p>University of Applied Sciences Berlin</p>
+      </footer>
+   </div>
+<!--<div style="background-color: rgba(0,0,0,0.7); display: flex; align-items: center;" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header">  <h3>Welcome</h3> 18.12.2015 <br> Thank you for your interest in CCGrid-Life. We would have loved to meet you at CCGrid-Life 2016. But we are very sorry to inform you that due to external reasons, we decided to withdraw the workshop. We hope we can welcome you at CCGrid-Life in conjunction with <a href="http://conference.researchbib.com/view/event/49167">CCGrid 2017 in Madrid</a>, so please check this site at times. <br> <br>  
+
+           <h4>Previous Workshops</h4>
+            <ul class="list-unstyled">
+               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
+               </li>
+               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
+              </li>
+               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a>
+               </li>
+                <li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a>
+               </li>
+            </ul>
+  </div>-->
+
+   </div> </div> </div>
+</body>
+
+</html>
