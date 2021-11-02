@@ -81,12 +81,7 @@ footer {
 }
 
 .btn-success {
-   background-color: #20acbd;
-   border-color: #20acbd;
-}
-
-.btn-success.active, .btn-success:visited, .btn-success:hover {
-  background-color: #5167ba;
+   background-color: #26b9d5;
 }
 
 .key-dates td:last-child {
@@ -113,11 +108,6 @@ footer {
       max-width: 960px;
    }
 }
-
-.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
-    background-color: #0e3497;
-}
-
 
 /* Zweispaltige Liste
 
