@@ -55,13 +55,14 @@
                      <h4 id="welcome">Welcome and Introduction by the Workshop Chairs</h4>
                   </td>
                </tr>
-                 <tr>
+               <tr>
                   <td>
                    	<h4 id="secureworfklow">A Secure Workflow for Shared HPC systems</h4>
 			<i>	Hendrik Nolte, Simon Hernan Sarmiento Sabater, Tim Ehlers and Julian Kunkel</i>
 			<br><br>
 			Driven by the progress of data and compute-intensive methods in various scientific domains, there is an increasing demand from researchers working with highly sensitive data to have access to the necessary computational resources to be able to adapt those methods in their respective fields. To satisfy the computing needs of those researchers in a cost-effective way, it is an open quest to integrate reliable security measures on existing High Performance Computing (HPC) clusters. The fundamental problem to securely work with sensitive data is, that HPC systems are shared systems that are typically trimmed for highest performance – not for high security. For instance, there are commonly no additional virtualization techniques employed, thus, users typically have access to the host operating system. Since new vulnerabilities are being continuously discovered, solely relying on the traditional Unix permissions is not secure enough. In this paper, we discuss a generic and secure workflow that can be implemented on typical HPC systems allowing users to transfer, store and analyze sensitive data. In our experiments, we see an advantage in the asynchronous execution of IO requests, while reaching 80% of the ideal performance.
                   </td>
+	       </tr>	 
                <tr>
                   <td>
 			<h4 id="empaia">The EMPAIA Platform: Vendor-neutral integration of AI applications into digital pathology infrastructures</h4>
@@ -71,7 +72,7 @@
 obtained through a central marketplace so pathologists can use them in their daily workflow. In this paper, we provide an overview of the EMPAIA platform
 architecture. We identify critical use cases and requirements for AI-based software platforms in pathology and explain how these are fulfilled by the EMPAIA platform. Finally, we evaluate the efficiency of routing image data through the platform.
                   </td>
-               <tr>
+               </tr>
                <tr>
                    <td>
 			<h4 id="selfadaption">On the building of self-adaptable systems to efficiently manage medical data</h4>
@@ -81,46 +82,44 @@ architecture. We identify critical use cases and requirements for AI-based softw
 service outages and violations of confidentiality. However, traditional NFR systems produce efficiency issues, which, when arising in runtime, could affect e-health decision-making processes. This paper presents a dynamic parallel pattern construction model to design and create efficient NFR self-adaptable systems. These patterns include two design phases: in the first one, the designers build NFR systems by creating pipelines including as many
 applications as required to meet the NFRs established by organizations. In the second phase, the pipelines are automatically added to a dynamic pattern in the form of workers to improve the performance of the NFR systems. The dynamic patterns include services that recursively and automatically perform performance diagnosis and modifications in the parallel version of the NFR system to face, in runtime, changes in the incoming workload. A prototype was implemented to create self-adaptable NFR systems, which were used in a case study to manage spirometry studies, tomography images, and electrocardiograms. The evaluation showed the effectiveness of this dynamic pattern model to create self-adaptable systems for processing multiple types of health data. The evaluation also revealed that the self-adaptive NFR systems built by dynamic patterns yielded significant performance gain in a direct comparison with the implementation of NFR application pipelines built by a traditional framework called Jenkins.
                   </td>
+                 </tr>
                  <tr>
                   <td>
-                   	<h4 id="collaboration">On distributed collaboration for biomedical analyses</h4>
-			<i>Fatima-Zahra Boujdad, Alban Gaignard, Mario Südholt, Wilmer Garzón Alfonso, Luis Daniel Benavides Navarro and Richard Redon</i>
+                   	<h4 id="sparkflow">SparkFlow: Towards High-Performance Data Analytics for Spark-based Genome Analysis</h4>
+			<i>Rosa Filgueira, Feras Awaysheh, Adam Carter, Darren White and Omer Rana</i>
 			<br><br>
-			SCooperation of research groups is nowadays common for the development and execution of biomedical analyses. Multiple partners contribute data in this context, data that is often centralized for processing at some cluster-based or supercomputer-based infrastructure. In contrast, real distributed collaboration that involves processing of data from several partners at different sites is rare. However, such distributed analyses are often very interesting, in particular, for scalability, security and privacy reasons.
-
-In this article, we motivate the need for real distributed biomedical analyses in the context of several on-going projects, including the I-CAN project that involves 34 French hospitals and affiliated research groups. We present a set of distributed architectures for such analyses that we have derived from discussions with four different medical research groups and a study of related work. These architectures allow for scalability, security/privacy and reproducibility issues to be taken into account. Finally, we illustrate how such architectures can be implemented with specific tools from computer science and bioinformatics. 
+			The recent advances in DNA sequencing technology triggered next-generation sequencing (NGS) research in full scale. Big Data (BD) is becoming the main driver in analyzing these large-scale bioinformatic data. However, this complicated process has become the system bottleneck, requiring an amalgamation of scalable approaches to deliver the needed performance and hide the deployment complexity. Utilizing cutting-edge scientific work- flows can robustly address these challenges. This paper presents a Spark-based alignment workflow called SparkFlow for massive NGS analysis over singularity containers. SparkFlow is highly scalable, reproducible, and capable of parallelizing computation by utilizing data-level parallelism and load balancing techniques in HPC and Cloud environments. The proposed workflow cap- italizes on benchmarking two state-of-art NGS workflows, i.e., BaseRecalibrator and ApplyBQSR. SparkFlow realizes the ability to accelerate large-scale cancer genomic analysis by scaling vertically (HyperThreading) and horizontally (provisions on- demand). Our result demonstrates a trade-off inevitably between the targeted applications and processor architecture. SparkFlow achieves a decisive improvement in NGS computation perfor- mance, throughput, and scalability while maintaining deployment complexity. The paper’s findings aim to pave the way for a wide range of revolutionary enhancements and future trends within the High-performance Data Analytics (HPDA) genome analysis realm
                   </td>
+                </tr>
                 <tr>
                   <td>
-			<h4 id="sciencegateway">Towards a Science Gateway for Bioinformatics: Experiences in the Brazilian System of High Performance Computing</h4>
-			<i>Kary Ocaña, Marcelo Galheigo, Carla Osthoff, Luiz Gadelha, Antônio Tadeu A. Gomes, Daniel de Oliveira, Fabio Porto and Ana Tereza Vasconelos​</i>
+			<h4 id="stitching">Multi-bed stitching tool for 3D computed tomography accelerated by GPU devices</h4>
+			<i>Javier Garcia Blas, Pablo Brox, Manuel Desco and Monica Abella</i>
 			<br><br>
-			Science gateways bring out the possibility of reproducible science as they are integrated to reusable techniques, data and workflow management systems, security mechanisms, and high performance computing (HPC). We introduce Bioinfo-Portal, a science gateway that executes bioinformatics applications using HPC and data management resources provided by the Brazilian National HPC System (SINAPAD). BioinfoPortal follows the Software as a Service (SaaS) model and it is freely available for academic use. Overall, this paper addresses an investigation on some of HPC features in the BioinfoPortal gateway system and analyzes of their impacts. We analyzed the scalability of RAxML in HPC clusters and general features from application executions (dataset, software parameters, efficiency of machines capacity) using machine learning techniques for predicting the effective allocation/usage of computational resources for the gateway. The machine-learning strategies appoint the best machine setup in a heterogeneous environment for the executions of applications that presented at least 75% of efficiency.​
-                  </td>
-               </tr>
-                <tr>
-                  <td>
-			<h4 id="keynote2">Towards data intensive aware programming models for Exascale systems</h4>
-			<i>Javier Garcia Blas​</i>
-			<br><br>
-			Extreme Data is an incarnation of Big Data concept distinguished by the massive amounts of data that must be queried, communicated and analyzed in (near) real-time by using a very large number of memory/storage elements and Exascale computing systems. Immediate examples are the scientific data produced at a rate of hundreds of gigabits-per-second that must be stored, filtered and analyzed, the millions of images per day that must be mined (analyzed) in parallel, the one billion of social data posts queried in real-time on an in-memory components database. Traditional disks or commercial storage cannot handle nowadays the extreme scale of such application data.
-
-Following the need of improvement of current concepts and technologies, ASPIDE’s activities focus on data-intensive applications running on systems composed of up to millions of computing elements (Exascale systems). Practical results will include the methodology and software prototypes that will be designed and used to implement Exascale applications.
-The ASPIDE project will contribute with the definition of a new programming paradigms, APIs, runtime tools and methodologies for expressing data-intensive tasks on Exascale systems, which can pave the way for the exploitation of massive parallelism over a simplified model of the system architecture, promoting high performance and efficiency, and offering powerful operations and mechanisms for processing extreme data sources at high speed and/or real-time.
+			In computed axial tomography (CT) systems it is common to make several consecutive tomographic acquisitions for different bed positions, which are subsequently combined to enlarge the field of view in the longitudinal direction. For this combination, geometric calibration of the bed motion is necessary to avoid double edges in the stitched area. This calibration is performed periodically using a specific manual calibration. This work presents a novel correlation-based automatic bed stitching tool for CT. Our approach exploits the massive parallelism offered by GPUs and features an optimized memory model that allows large volumes to be stitched in near-real time. Evaluation in rodent studies demonstrates not only that the offered implementation is able to paste tomographic studies in reduced time, but also that it reduces the memory footprint.
                  </td>
                </tr>
                 <tr>
                   <td>
-			<h4 id="bigdata">Big Data Analytics Exploration of Green Space and Mental Health in Melbourne</h4>
-			<i>Richard Sinnott and Ying Hu</i>
+			<h4 id="supervision">Evaluating the spread of Omicron COVID-19 variant in Spain</h4>
+			<i>Miguel Guzman Merino, Maria Cristina Marinescu and David E. Singh</i>
 			<br><br>
-			Numerous researchers have shown that urban green space, e.g. parks and gardens, is positively associated with health and general well-being. However, these works are typically based on surveys that have many limitations related to the sample size and the questionnaire design. Social media offers the possibility to systematically assess how human emotion is impacted by access to green space at a far larger scale that is more representative of society. In this paper, we explore how Twitter data was used to explore the relationship between green space and human emotion (sentiment). We consider the relationship between Twitter sentiment and green space in the suburbs of Melbourne and consider the impact of socio-economics and related demographic factors. We develop a linear model to explore the extent that access to green space has on the sentiment of tweeters..​
+			This work analyzes the propagation of Omicron, a high transmissible COVID-19 variant, across Spain by means of EpiGraph. EpiGraph is an agent-based parallel simulator that reproduces the COVID-19 propagation over wide areas. In this work we consider a population of 19,574,086 individuals related to the 63 most populated cities of Spain for the time interval comprised between May 15th of 2021 and March 6th of 2022. The main variants existing at the start of the simulation were the Alpha and Delta, with a a 4% and 96% prevalence of the existing infections, respectively. Then, during the second mid of November of 2021 the Delta variant appears in Spain. Given to the higher transmissibility of this new variant -about 2 times larger than Delta-, it quickly spreads through all the cities and becomes the dominant strain of the country. In this work we analyze the propagation of this variant under multiple conditions. First, we define a baseline scenario, that reproduces the existing conditions of the COVID-19 propagation in Spain for this period. Then, we consider alternative scenarios, in which different locations of the initial spread of Omicron variant are considered. Finally, for each one of these scenarios, we evaluate different transportation intensities -i.e. movement of individuals between the cities-. The main conclusion of this work is that, independently of the initial location of the Omicron variant, and the existing transportation conditions, the Omicron variant spreads though all the country in a short time interval.
                   </td
                </tr>
+	       <tr>
+                  <td>
+			<h4 id="portability">Portability for GPU-accelerated molecular docking applications for cloud and HPC: can portable compiler directives provide performance across all platforms?</h4>
+			<i>Mathialakan Thavappiragasam, Wael Elwasif and Ada Sedova</i>
+			<br><br>
+			High-throughput structure-based screening of drug- like molecules has become a common tool in biomedical research. Recently, acceleration with graphics processing units (GPUs) has provided a large performance boost for molecular docking programs. Both cloud and high-performance computing (HPC) resources have been used for large screens with molecular docking programs; while NVIDIA GPUs have dominated cloud and HPC resources, new vendors such as AMD and Intel are now entering the field, creating the problem of software portability across different GPUs. Ideally, software productivity could be maximized with portable programming models that are able to maintain high performance across architectures. While in many cases compiler directives have been used as an easy way to offload parallel regions of a CPU-based program to a GPU accelerator, they may also be an attractive programming model for providing portability across different GPU vendors, in which case the porting process may proceed in the reverse direction: from low-level, architecture-specific code to higher- level directive-based abstractions. MiniMDock is a new mini- application (miniapp) designed to capture the essential compu- tational kernels found in molecular docking calculations, such as are used in pharmaceutical drug discovery efforts, in order to test different solutions for porting across GPU architectures. Here we extend MiniMDock to GPU offloading with OpenMP directives, and compare to performance of kernels using CUDA, and HIP on both NVIDIA and AMD GPUs, as well as across different compilers, exploring performance bottlenecks. We document this reverse-porting process, from highly optimized device code to a higher-level version using directives, compare code structure, and describe barriers that were overcome in this effort.
+		       </td>
+               </tr>
+
               <tr>
                   <td>
-			<h4 id="paneldiscussion">Discussion: Lessons Learned and Future Perspectives</h4> 
-			<i>Moderation: Workshop Chairs</i>
+			<h4 id="closing">Workshop Closing: Lessons Learned and Future Perspectives</h4> 
+			<i>Workshop Chairs</i>
 			<br><br>
                   </td>
                </tr>
@@ -135,9 +134,9 @@ The ASPIDE project will contribute with the definition of a new programming para
       <div class="col-md-6">
             <h3>Workshop Venue</h3>
             <p>
-               <a href="http://ccgrid2019.ucy.ac.cy/pages/venue.html">Golden Bay Beach Hotel <br>
-               Larnaca<br>
-			Cyprus	</a>
+               <a href="https://fcrlab.unime.it/ccgrid22/digital-day-in-messina/">University of Messina</a> 
+               Messina<br>
+			Sicily, Italy</a>
             </p>
 	</div>
         <div class="col-md-6">
@@ -148,31 +147,18 @@ The ASPIDE project will contribute with the definition of a new programming para
                <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a></li>
                <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a></li>
                 <li><a href="http://lsgc.org/ccgrid-life-2017//">CCGrid-Life 2017</a></li>
+                <li><a href="http://lsgc.org/ccgrid-life-2019//">CCGrid-Life 2019</a></li>
                </li>
             </ul>
          </div>
       </div>
 
       <footer>
-         <p>University of Applied Sciences Berlin</p>
+         <p>University Medical Center Goettingen</p>
       </footer>
    </div>
-<!--<div style="background-color: rgba(0,0,0,0.7); display: flex; align-items: center;" id="myModal" class="modal fade in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"> <div class="modal-dialog" role="document"> <div class="modal-content"> <div class="modal-header">  <h3>Welcome</h3> 18.12.2015 <br> Thank you for your interest in CCGrid-Life. We would have loved to meet you at CCGrid-Life 2016. But we are very sorry to inform you that due to external reasons, we decided to withdraw the workshop. We hope we can welcome you at CCGrid-Life in conjunction with <a href="http://conference.researchbib.com/view/event/49167">CCGrid 2017 in Madrid</a>, so please check this site at times. <br> <br>  
-
-           <h4>Previous Workshops</h4>
-            <ul class="list-unstyled">
-               <li><a href="http://lsgc.org/ccgrid-life-2015//">CCGrid-Life 2015</a>
-               </li>
-               <li><a href="http://lsgc.org/ccgrid-health-2014//">CCGrid-Health 2014</a> and <a href="http://www.arcos.inf.uc3m.es/~c4bio2014/">C4Bio 2014</a>
-              </li>
-               <li><a href="http://proton.unice.fr/DCICTIA-MICCAI12/">DCICTIA-MICCAI 2012</a>
-               </li>
-                <li><a href="http://www.pneumogrid.de/web/miccai-hpdci/home">HP-MICCAI/MICCAI-DCI 2011</a>
-               </li>
-            </ul>
-  </div>-->
-
    </div> </div> </div>
 </body>
 
 </html>
+
